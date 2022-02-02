@@ -1,0 +1,53 @@
+{
+  "name": "inten-statamic-template",
+  "private": true,
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "engines": {
+    "node": ">=12"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./public"
+    }
+  },
+  "scripts": {
+    "build-dev": "NODE_ENV=development yarn build",
+    "prebuild": "npx browserslist@latest --update-db && composer install",
+    "prewatch": "npx browserslist@latest --update-db && composer install",
+    "build": "parcel build ./resources/js/site.js ./resources/css/site.css --no-cache --public-url ../",
+    "watch": "parcel watch ./resources/js/site.js ./resources/css/site.css --no-cache --public-url ../",
+    "format": "prettier --loglevel warn --write \"resources/**/*.{js,css,md}\"",
+    "serve": "php artisan serve",
+    "dev": "concurrently yarn:watch yarn:serve"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "keen-slider": "^5.4.0",
+    "luminous-lightbox": "^2.3.3",
+    "postcss": "^8.3.9",
+    "postcss-nesting": "^8.0.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^22.0.0",
+    "tailwind-css-variables": "^3.0.1",
+    "tailwindcss": "^2.2.16"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.0.0-rc.0",
+    "@parcel/resolver-glob": "^2.0.0-rc.0",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.7",
+    "concurrently": "^6.3.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.4",
+    "parcel": "^2.0.0-rc.0",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "templates/**/*.{js,css,md}": "prettier --write"
+  }
+}

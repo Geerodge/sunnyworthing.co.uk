@@ -1,0 +1,60 @@
+{{ partial:components/Hero/hero image=image }}
+<div class="relative bg--texture max-w-screen-max mx-auto">
+    <article class="mx-auto py-4">
+        {{ collection:articles as="articles" paginate="true" limit="4" }}
+            {{ if no_results }}
+                <h2 class="heading-2 font-serif text-brand-primary text-center">No blog posts yet! Check back soon.</h2>
+            {{ /if }}
+            {{ articles }}
+                {{ partial:components/ImageAside/article-image-aside image=image image_side=image_side }}
+            {{ /articles }}
+            <!-- https://statamic.dev/tags/collection#pagination-examples -->
+            {{ paginate }}
+                {{ if prev_page || next_page }}
+                    <div class="pagination ">
+                        {{ links:segments }}
+                            <ul class="flex">
+                                <a href="{{ prev_page }}">
+                                    <li class="prev bg-brand-secondary text-brand-black text-base">
+                                        &#10094;
+                                    </li>
+                                </a>
+                                {{ first }}
+                                    {{ if page == current_page }}
+                                        <li class="bg-brand-primary text-brand-white">
+                                            {{ page }}
+                                        </li>
+                                    {{ else }}
+                                        <a href="{{ url }}">
+                                            <li class="bg-brand-primary text-brand-white">
+                                                {{ page }}
+                                            </li>
+                                        </a>
+                                    {{ /if }}
+                                {{ /first }}
+                                {{ last }}
+                                    {{ if page == current_page }}
+                                        <li class="bg-brand-primaryLight text-brand-white">
+                                            {{ page }}
+                                        </li>
+                                    {{ else }}
+                                        <a href="{{ url }}">
+                                            <li class="bg-brand-primary text-brand-white">
+                                                {{ page }}
+                                            </li>
+                                        </a>
+                                    {{ /if }}
+                                {{ /last }}
+                                <a href="{{ next_page }}">
+                                    <li class="next bg-brand-secondary text-brand-black text-base">
+                                        &#10095;
+                                    </li>
+                                </a>
+                            </ul>
+                        {{ /links:segments }}
+                    </div>
+                {{ /if }}
+            {{ /paginate }}
+        {{ /collection:articles }}
+    </article>
+</div>

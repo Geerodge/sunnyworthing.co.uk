@@ -1,0 +1,8 @@
+.hero {
+    @apply mx-auto max-w-screen-max;
+    height: 87%;
+}
+
+.hero__text {
+    @apply flex flex-col items-center justify-center h-full mx-auto text-center px-4;
+}

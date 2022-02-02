@@ -1,0 +1,37 @@
+footer {
+    @apply bg-white flex flex-col items-center mx-auto max-w-screen-max;
+}
+
+.footer__container {
+    @apply max-w-8xl mx-auto w-full flex flex-col justify-between items-center;
+}
+
+.footer__links ul {
+    @apply flex flex-col items-center mb-8;
+}
+
+.footer__links li {
+    @apply my-3;
+}
+
+.footer__links span {
+    @apply hidden;
+}
+
+@screen lg {
+    .footer__container {
+        @apply flex-row;
+    }
+
+    .footer__links ul {
+        @apply mb-0 flex-row items-start;
+    }
+
+    .footer__links li {
+        @apply my-0;
+    }
+
+    .footer__links span {
+        @apply block;
+    }
+}

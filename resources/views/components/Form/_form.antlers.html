@@ -1,0 +1,22 @@
+<div class="contact-form">
+    {{ form:contact_us }}
+        {{ if success }}
+            <h3 class="text-brand-primaryLight font-sans heading-3 text-center">
+                {{ success }}
+            </h3>
+        {{ else }}
+            {{ fields }}
+                <div class="py-2">
+                    <div class="py-1">
+                        {{ field }}
+                    </div>
+                </div>
+            {{ /fields }}
+            <input type="text"
+                   class="hidden"
+                   name="{{ honeypot ?? 'honeypot' }}">
+            <button class="btn small btn--primary"
+                    type="submit">Send</button>
+        {{ /if }}
+    {{ /form:contact_us }}
+</div>

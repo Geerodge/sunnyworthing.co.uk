@@ -1,0 +1,41 @@
+.cards {
+    @apply mx-auto bg-white max-w-screen-max;
+}
+
+.cards__container {
+    @apply flex flex-wrap items-center justify-between max-w-8xl mx-auto;
+}
+
+.card {
+    @apply mx-auto w-80%;
+
+    & .card__image {
+        @apply mx-auto;
+
+        & img {
+            @apply m-auto w-full h-full;
+        }
+    }
+}
+
+@screen sm {
+    .card {
+        @apply w-40%;
+    }
+}
+
+@screen lg {
+    .card {
+        @apply mx-0 w-30%;
+    }
+
+    .card:nth-child(2n) {
+        margin: 2rem 5%;
+    }
+}
+
+@screen xl {
+    .card {
+        width: 30%;
+    }
+}

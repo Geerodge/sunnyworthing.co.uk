@@ -1,0 +1,26 @@
+<section class="section cards">
+    <div class="cards__container">
+        {{ cards }}
+            <div class="card">
+                <div class="card__image">
+                    <img src="{{ glide:image width="366" height="361" }}" loading="lazy"
+                        alt="{{ title }}" />
+                </div>
+                <div class="card__content">
+                    <div class="heading-4 text-brand-black font-sans mt-4">
+                        {{ title }}
+                    </div>
+                    <p class="p p-small my-4">
+                        {{ textarea }}
+                    </p>
+                </div>
+                <div class="card__button">
+                    <a class="button" href="{{ button_url }}"
+                        class="btn small {{ button_color }}">
+                        {{ button_text }}
+                    </a>
+                </div>
+            </div>
+        {{ /cards }}
+    </div>
+</section>

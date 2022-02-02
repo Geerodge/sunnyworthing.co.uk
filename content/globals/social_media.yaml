@@ -1,0 +1,27 @@
+title: 'Social Media'
+data:
+  social:
+    -
+      name: Facebook
+      url: 'https://www.facebook.com/'
+      icon: icons/facebook-black.svg
+      link: null
+      title: Facebook
+    -
+      name: Instagram
+      url: 'https://www.instagram.com/'
+      icon: icons/instagram-black.svg
+      link: null
+      title: Instagram
+    -
+      name: Twitter
+      url: 'https://twitter.com/'
+      icon: icons/twitter-black.svg
+      link: null
+      title: Twitter
+    -
+      name: YouTube
+      url: 'https://youtube.com/'
+      icon: icons/youtube-black.svg
+      link: null
+      title: Youtube

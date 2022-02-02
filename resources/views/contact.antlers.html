@@ -1,0 +1,21 @@
+{{ partial:components/Hero/hero image=image }}
+<section class="contact ">
+    <div class="contact-container">
+        <div class="contact-header">
+            <div class="py-8 text-center lg:py-16">
+                <h3 class="heading-4 font-sans text-brand-black pb-6">
+                    {{ company_information:email }}
+                </h3>
+                <h3 class="heading-4 font-sans text-brand-black">
+                    {{ company_information:phone_number }}
+                </h3>
+            </div>
+        </div>
+        {{ partial:components/Form/form }}
+        <div class="pt-8">
+            <p class="caption">
+                {{ small_print }}
+            </p>
+        </div>
+    </div>
+</section>

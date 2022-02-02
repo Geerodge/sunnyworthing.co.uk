@@ -1,0 +1,17 @@
+{{ block_builder }}
+    {{ if type === "hero" }}
+        {{ partial:components/Hero/hero image=image }}
+    {{ /if }}
+    {{ if type === "image_aside" }}
+        {{ partial:components/ImageAside/image-aside image=image background=background image_side=image_side }}
+    {{ /if }}
+    {{ if type === "cards" }}
+        {{ partial:components/Cards/cards }}
+    {{ /if }}
+    {{ if type === "bard" }}
+        {{ partial:components/Bard/bard background=background }}
+    {{ /if }}
+    {{ if type === "accordion" }}
+        {{ partial:components/Accordion/accordion  }}
+    {{ /if }}
+{{ /block_builder }}

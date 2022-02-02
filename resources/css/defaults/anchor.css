@@ -1,0 +1,11 @@
+a.anchor {
+    @apply text-brand-black transition-colors hover:text-brand-primary;
+}
+
+a.anchor--primary {
+    @apply text-brand-primary transition-colors hover:text-brand-secondary;
+}
+
+a.anchor--secondary {
+    @apply text-brand-secondary transition-colors hover:text-brand-primary;
+}

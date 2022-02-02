@@ -1,0 +1,3 @@
+.button {
+    @apply px-8 py-4 inline-flex bg-brand-primary text-brand-white transition-colors hover:bg-brand-secondary;
+}

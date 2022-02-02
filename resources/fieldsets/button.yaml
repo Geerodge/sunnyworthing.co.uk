@@ -1,0 +1,39 @@
+title: Button
+fields:
+  -
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button Text'
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: button_url
+    field:
+      display: 'Button Url'
+      type: link
+      icon: link
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: button_color
+    field:
+      options:
+        btn--primary: Primary
+        btn--secondary: Secondary
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Button Color'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above

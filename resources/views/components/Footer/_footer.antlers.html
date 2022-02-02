@@ -1,0 +1,22 @@
+<div class="section max-w-screen-max mx-auto bg-brand-primary text-brand-white p-3 text-center font-sans p-small">
+    {{ partial:components/Carbon/carbon  }}
+</div>
+<footer class="section">
+    <div class="footer__container">
+        <div class="footer__links">
+            <ul class="p p-small">
+                <li>©
+                    {{ site_settings:site_name }} <?= date('Y') ?>
+                </li>
+                {{ nav:footer_nav }}
+                    <span class="mx-4">/</span>
+                    <li><a href="{{ url }}"
+                            class="link {{ is_current || is_parent ?= "link--active" }}">
+                            {{ title }}
+                        </a></li>
+                {{ /nav:footer_nav  }}
+            </ul>
+        </div>
+        {{ partial:components/Social/social-links  }}
+    </div>
+</footer>

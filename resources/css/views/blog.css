@@ -1,0 +1,16 @@
+.pagination {
+    @apply flex justify-between items-center text-xl mx-auto px-8 py-16;
+    max-width: max-content;
+    & li {
+        @apply flex items-center justify-center cursor-pointer rounded-xl h-11 w-11 mx-1 transition-colors;
+    }
+
+    & li:hover {
+        @apply bg-brand-primary;
+    }
+
+    & .prev:hover,
+    & .next:hover {
+        @apply bg-brand-secondary text-brand-primary;
+    }
+}

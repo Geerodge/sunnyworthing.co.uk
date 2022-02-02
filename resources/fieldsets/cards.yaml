@@ -1,0 +1,17 @@
+title: Cards
+fields:
+  -
+    handle: cards
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: 'New Set'
+          fields:
+            -
+              import: card
+      display: Cards
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above

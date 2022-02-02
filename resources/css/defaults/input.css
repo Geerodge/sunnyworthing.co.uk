@@ -1,0 +1,29 @@
+input {
+    @apply bg-brand-white text-brand-black pl-8 pt-1 outline-none w-full !important;
+    min-height: 80px;
+    font-size: clamp(1.25rem, 3vw, 1.375rem) !important;
+}
+
+textarea {
+    @apply bg-brand-white text-brand-black pl-8 pt-8 outline-none w-full !important;
+    min-height: 240px;
+    font-size: clamp(1.25rem, 3vw, 1.375rem) !important;
+}
+
+::placeholder {
+    @apply text-brand-black !important;
+    font-size: clamp(1.25rem, 3vw, 1.375rem);
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #FCF8F1 inset !important;
+}

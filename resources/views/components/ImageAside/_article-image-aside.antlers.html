@@ -1,0 +1,24 @@
+<section class="section image-aside">
+    <div class="image-aside__container {{ count % 2 === 0 ? 'image--left' : 'image--right' }}">
+        <div class="image-aside__text py-8 lg:py-12">
+            <div class="pb-8 lg:pb-12">
+            </div>
+            <h2 class="heading-2 font-sans max-w-xl max text-brand-black">
+                {{ title }}
+            </h2>
+            <div class="p p-medium mt-6 mb-12">
+                {{ summary ? summary : content | safe_truncate:150:... }}
+            </div>
+            <a href="{{ url }}"
+                class="btn btn--primary mt-8 lg:mt-0 {{ button_color }}">
+                Read article
+            </a>
+        </div>
+        {{ if image }}
+            <div class="image-aside__image pb-8 px-4 lg:p-0">
+                <img src="{{ glide:image width="675" height="468" }}" loading="lazy"
+                    alt="{{ title }}" />
+            </div>
+        {{ /if }}
+    </div>
+</section>

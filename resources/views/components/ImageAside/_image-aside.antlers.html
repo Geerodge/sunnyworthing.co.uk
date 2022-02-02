@@ -1,0 +1,24 @@
+<section class="section image-aside {{ background }}"
+    id={{ anchor }}>
+<div class="image-aside__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
+    <div class="image-aside__text py-8 lg:py-12">
+        <h2 class="heading-2 font-sans max-w-xl
+                    {{ background === "bg-brand-primary" ? "text-brand-white" : "text-brand-primary" }}">
+            {{ title }}
+        </h2>
+        <p class="p p-base mt-6 mb-12 {{ background === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea }}
+        </p>
+        <a href="{{ button_url }}"
+            class="btn small {{ button_color }}">
+            {{ button_text }}
+        </a>
+    </div>
+    <div class="image-aside__image pb-8 px-4 lg:p-0">
+        {{ if image }}
+            <img src="{{ glide:image width="675" height="468" }}" loading="lazy"
+                alt="{{ title }}" />
+        {{ /if }}
+    </div>
+</div>
+</section>

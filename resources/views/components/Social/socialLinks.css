@@ -1,0 +1,8 @@
+.social-links path {
+    @apply transition-colors;
+    fill: var(--color-brand-primary);
+}
+
+.social-links li:hover path {
+    fill: var(--color-brand-primary-light);
+}

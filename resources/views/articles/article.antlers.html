@@ -1,0 +1,15 @@
+{{ partial:components/Hero/hero heading=title image=image }}
+<div class="relative  max-w-screen-max mx-auto">
+    <div class="max-w-screen-xl mx-auto py-12 px-6 lg:pt-24">
+        {{ image }}
+            <img class="mx-auto" src="{{ glide:url width="1072" height="707" }}" loading="lazy"
+                alt="{{ title }}" />
+        {{ /image }}
+    </div>
+    <article class="lg:pt-12 pb-24 max-w-3xl mx-auto">
+        <div class="pb-12 px-6">
+            {{ bard }}
+        </div>
+    </article>
+</div>
+</div>

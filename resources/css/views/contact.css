@@ -1,0 +1,13 @@
+.contact {
+    @apply mx-auto;
+    max-width: 1920px;
+    padding: clamp(2rem, 4vw, 6rem);
+}
+
+.contact-container {
+    @apply max-w-4xl mx-auto;
+}
+
+.contact-header {
+    @apply flex flex-col items-center justify-center pb-12;
+}
