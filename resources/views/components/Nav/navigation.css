@@ -1,35 +1,43 @@
-.nav-container {
+.nav__container {
     @apply w-full h-32;
 }
 
-.nav-link {
-    @apply text-left;
+.nav__link {
+    @apply text-left text-brand-primaryText uppercase font-bold;
+}
+.nav__link:hover {
+    @apply opacity-75;
+}
+.nav__link:last-child:after {
+    content: '\2304';
+    position: relative;
+    top: -3px;
 }
 
-.nav-link--active {
+.nav__link--active {
     @apply text-brand-primary;
 }
 
-.mobile-navigation-open {
+.nav__mobile-open {
     @apply opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transform origin-top-right z-50;
 }
 
-.mobile-navigation-closed {
+.nav__mobile-closed {
     @apply opacity-0 scale-95 absolute inset-x-0 p-2 transition transform origin-top-right;
     top: -100vh;
 }
 
 @screen lg {
-    .nav-link {
+    .nav__link {
         @apply text-center mx-6;
     }
 
-    .nav-link:last-of-type {
+    .nav__link:last-of-type {
         @apply mr-0 ml-6;
     }
 
-    .mobile-navigation-closed,
-    .mobile-navigation-open {
+    .nav__mobile-closed,
+    .nav__mobile-open {
         @apply hidden;
     }
 }
