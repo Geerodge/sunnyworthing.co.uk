@@ -2,20 +2,39 @@
     @apply w-full h-32;
 }
 
+.nav {
+    position: relative;
+}
+
 .nav__link {
     @apply text-left text-brand-primaryText uppercase font-bold;
 }
+
 .nav__link:hover {
     @apply opacity-75;
 }
-.nav__link:last-child:after {
+
+.nav__link:nth-child(4):after {
     content: '\2304';
     position: relative;
     top: -3px;
 }
 
+.nav__link:nth-child(4):hover ~ .nav__dropdown {
+    display: block;
+    background-color: black;
+}
+
 .nav__link--active {
     @apply text-brand-primary;
+}
+
+.nav__dropdown {
+    display: block;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav__mobile-open {
@@ -35,6 +54,10 @@
     .nav__link:last-of-type {
         @apply mr-0 ml-6;
     }
+
+    /* .nav__dropdown {
+        @apply hidden;
+    } */
 
     .nav__mobile-closed,
     .nav__mobile-open {

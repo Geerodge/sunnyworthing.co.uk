@@ -9,8 +9,13 @@
             <nav class="nav hidden lg:flex lg:items-center">
                 {{ nav:main_nav }}
                     <a href="{{ url }}"
-                        class="nav__link text-xl {{ is_current || is_parent ?= "nav__link nav__link--active" }}">
+                        class="nav__link text-xl {{ is_current || is_parent ?= "nav__link--active" }}">
                         {{ title }}
+                        {{ if children }}
+                            <nav class="nav__dropdown">
+                                {{ *recursive children* }}
+                            </nav>
+                        {{ /if }}
                     </a>
                 {{ /nav:main_nav }}
             </nav>
