@@ -1,8 +1,149 @@
+.hidden-phone {
+    display: none;
+}
+
 .hero {
     @apply mx-auto max-w-screen-max;
     height: 87%;
 }
 
-.hero__text {
-    @apply flex flex-col items-center justify-center h-full mx-auto text-center px-4;
+.hero__container {
+    @apply relative flex flex-col items-center justify-center h-full mx-auto px-4;
 }
+
+.hero__text-container {
+    @apply mb-50%;
+}
+
+.hero__heading {
+    @apply font-serif font-extrabold text-left w-full;
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+}
+
+.hero__pre-text {
+    @apply uppercase text-left w-full;
+}
+
+.hero__post-text {
+    @apply text-left w-full;
+}
+
+.hero__form {
+    @apply absolute bg-brand-white rounded-lg w-90% bottom-20;
+}
+
+.hero__form form {
+    @apply flex;
+}
+
+.hero__form input {
+    @apply rounded-lg;
+}
+
+.hero__form input::placeholder {
+    @apply text-sm text-brand-grayLight !important;
+}
+
+.hero__form button {
+    @apply bg-brand-orange uppercase text-sm font-semibold tracking-wider text-left rounded-lg p-2 m-1;
+    min-width: 20%;
+    vertical-align: middle;
+}
+
+.hero__form button:after {
+    @apply text-base;
+    content: "🡢";
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hero__form form input[type="email"] {
+    @apply text-base !important;
+}
+
+@screen xs {
+
+    .hero__form {
+        @apply bottom-80;
+    }
+
+    .hero__text-container {
+        @apply mb-60%;
+    }
+
+    .hero__form button:after {
+        @apply text-lg;
+    }
+}
+
+@screen sm {
+    .hero__form button:after {
+        @apply text-xl;
+    }
+}
+
+@screen md {
+
+    .hero__form {
+        @apply bottom-20 w-60%;
+    }
+
+    .hero__text-container {
+        @apply mb-20%;
+    }
+
+    .hero__form button {
+        @apply text-brand-orange bg-brand-white uppercase font-semibold tracking-wider text-base p-0 m-0;
+        min-width: 40%;
+    }
+
+    .hero__form button:after {
+        @apply text-base;
+        content: "🡢";
+        margin: 0 .5rem;
+        position: relative;
+        right: 0;
+        -webkit-transition: all 0.75s;
+        transition: all 0.75s;
+
+        display: initial;
+        width: initial;
+        text-align: initial;
+    }
+
+    .hero__form button:hover {
+        @apply opacity-75;
+    }
+
+    .hero__form button:hover:after {
+        right: -10px;
+    }
+
+    .hidden-phone {
+        display: inline;
+    }
+}
+
+
+/* .hero__form button {
+    @apply text-brand-orange uppercase font-semibold tracking-wider text-xs;
+    min-width: 40%;
+}
+
+.hero__form button:after {
+    content: "🡢";
+    margin: 0 .25rem;
+    position: relative;
+    right: 0;
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+}
+
+.hero__form button:hover {
+    @apply opacity-75;
+}
+
+.hero__form button:hover:after {
+    right: -10px;
+} */

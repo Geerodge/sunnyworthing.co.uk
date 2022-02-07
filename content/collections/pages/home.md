@@ -3,16 +3,18 @@ id: home
 blueprint: pages
 title: Home
 template: default
-updated_by: 6d1af9c0-511e-4aad-94a9-44a14a2422ee
-updated_at: 1638544419
+updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
+updated_at: 1644239484
 block_builder:
   -
-    heading: 'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.'
+    heading: 'The Definitive Guide'
     type: hero
     enabled: true
-    image: placeholder.jpg
-    textarea: 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.'
+    textarea: 'to Worthing, West Sussex'
     background: bg-brand-primary
+    image: worthing-pier-hero.png
+    pretextarea: 'Welcome to Sunny Worthing'
+    hero_form_field: hero_subscription
   -
     image_side: right
     background: bg-brand-white

@@ -7,14 +7,42 @@ background-position: bottom;">
 background-size: cover;
 background-position: bottom;">
 {{ /if }}
-<div class="hero__text {{ image ? "text-brand-white" : "text-brand-black" }} ">
-    <h1 class="heading-1">
-        {{ heading }}
-    </h1>
-    {{ if textarea }}
-        <p class="p p-base">
-            {{ textarea }}
-        </p>
+<div class="hero__container {{ image ? "text-brand-white" : "text-brand-black" }} ">
+    <div class="hero__text-container">
+        {{ if pretextarea }}
+            <p class="p p-base hero__pre-text">
+                {{ pretextarea }}
+            </p>
+        {{ /if }}
+        <h1 class="hero__heading">
+            {{ heading }}
+        </h1>
+        {{ if textarea }}
+            <p class="p p-base hero__post-text">
+                {{ textarea }}
+            </p>
+        {{ /if }}
+    </div>
+    {{ if hero_form_field }}
+        <div class="hero__form">
+            {{ form:hero_subscription }}
+                {{ if success }}
+                    <p class="text-brand-primaryLight font-sans text-center">
+                        {{ success }}
+                    </p>
+                {{ else }}
+                    {{ fields }}
+                        {{ field }}
+                    {{ /fields }}
+                    <input type="text"
+                           class="hidden"
+                           name="{{ honeypot ?? 'honeypot' }}">
+                    <button class="btn small btn--primary"
+                            type="submit"><span class="hidden-phone">Subscribe now</span></button>
+                {{ /if }}
+            </div>
+            {{ /form:hero_subscription }}
+        </div>
     {{ /if }}
 </div>
 </section>

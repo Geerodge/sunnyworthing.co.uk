@@ -8,7 +8,7 @@
 }
 
 .nav__link {
-    @apply text-brand-primaryText uppercase font-bold;
+    @apply text-brand-gray uppercase font-bold;
 }
 
 .nav__link:hover {
@@ -27,7 +27,7 @@
 }
 
 .nav__link--active {
-    @apply text-brand-primary;
+    @apply text-brand-gray;
 }
 
 .nav__dropdown {
