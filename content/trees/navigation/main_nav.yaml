@@ -3,8 +3,22 @@ tree:
     id: 5b252346-1b73-4fd3-9b2f-2eae6f32d259
     entry: home
   -
-    id: 008e353f-e140-478a-ae56-b793cb37c51f
-    entry: 972557c8-e9df-4394-9daa-b7f43f38a5dd
+    id: 5407caa4-3de4-489d-a9f7-d14787e44e4f
+    entry: cb57477d-5748-4c4c-a535-33fd4699c002
   -
-    id: 002b6fd8-6bca-4d0b-b4ad-461a19d2ebe1
-    entry: 2c17fab1-496b-403c-b434-54a185cf7e68
+    id: 1cceac05-c96c-4bd9-bd47-49a436211dd6
+    entry: 536a0713-3bd2-4656-9880-774127c8ce82
+  -
+    id: 6be1ac23-62b6-45e5-afc9-ccfcc68820d4
+    title: Explore
+    url: Explore
+    children:
+      -
+        id: f12f77a1-3653-4788-9561-48ed5d0e07a3
+        entry: adf905b9-8c43-4159-a6a0-3f03c9227a57
+      -
+        id: f7695d0f-a32c-4338-ab8a-40cac0795c38
+        entry: a6ddc575-8a46-4083-82c9-a5a2b06a3223
+      -
+        id: ebe5c038-dc37-4e07-a747-df9498b09d06
+        entry: ff06a46b-4da8-4d58-883f-ab7b78ba4c60

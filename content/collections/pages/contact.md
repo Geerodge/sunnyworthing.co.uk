@@ -2,9 +2,9 @@
 id: 2c17fab1-496b-403c-b434-54a185cf7e68
 blueprint: contact_us
 template: contact
-title: 'Contact us'
-updated_by: 6d1af9c0-511e-4aad-94a9-44a14a2422ee
-updated_at: 1638538442
+title: Contact
+updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
+updated_at: 1643816902
 heading: 'Contact us'
 textarea: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta.'
 small_print: |-

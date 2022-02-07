@@ -3,25 +3,23 @@ data:
   social:
     -
       name: Facebook
-      url: 'https://www.facebook.com/'
+      url: 'https://www.facebook.com/SunnyWorthing'
       icon: icons/facebook-black.svg
       link: null
       title: Facebook
     -
       name: Instagram
-      url: 'https://www.instagram.com/'
+      url: 'https://www.instagram.com/sunny_worthing/'
       icon: icons/instagram-black.svg
       link: null
       title: Instagram
     -
       name: Twitter
-      url: 'https://twitter.com/'
+      url: 'https://twitter.com/Sunny_Worthing'
       icon: icons/twitter-black.svg
       link: null
       title: Twitter
     -
-      name: YouTube
-      url: 'https://youtube.com/'
-      icon: icons/youtube-black.svg
-      link: null
-      title: Youtube
+      title: Pinterest
+      url: 'https://www.pinterest.co.uk/sunnyworthing/'
+      icon: icons/pinterest.svg
