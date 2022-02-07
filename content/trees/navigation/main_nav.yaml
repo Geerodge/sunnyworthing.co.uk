@@ -11,6 +11,7 @@ tree:
   -
     id: 6be1ac23-62b6-45e5-afc9-ccfcc68820d4
     title: Explore
+    url: Explore
     children:
       -
         id: f12f77a1-3653-4788-9561-48ed5d0e07a3

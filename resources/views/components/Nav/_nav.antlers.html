@@ -11,12 +11,12 @@
                     <a href="{{ url }}"
                         class="nav__link text-xl {{ is_current || is_parent ?= "nav__link--active" }}">
                         {{ title }}
-                        {{ if children }}
-                            <nav class="nav__dropdown">
-                                {{ *recursive children* }}
-                            </nav>
-                        {{ /if }}
                     </a>
+                    {{ if children }}
+                        <nav class="nav__dropdown">
+                            {{ *recursive children* }}
+                        </nav>
+                    {{ endif }}
                 {{ /nav:main_nav }}
             </nav>
             <div class="-mr-2 -my-2 lg:hidden">

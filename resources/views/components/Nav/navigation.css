@@ -1,5 +1,6 @@
 .nav__container {
     @apply w-full h-32;
+    position: relative;
 }
 
 .nav {
@@ -7,7 +8,7 @@
 }
 
 .nav__link {
-    @apply text-left text-brand-primaryText uppercase font-bold;
+    @apply text-brand-primaryText uppercase font-bold;
 }
 
 .nav__link:hover {
@@ -20,9 +21,9 @@
     top: -3px;
 }
 
-.nav__link:nth-child(4):hover ~ .nav__dropdown {
-    display: block;
-    background-color: black;
+.nav__link:nth-child(4):hover ~ .nav__dropdown,
+.nav__dropdown:hover {
+    display: flex;
 }
 
 .nav__link--active {
@@ -30,11 +31,26 @@
 }
 
 .nav__dropdown {
-    display: block;
+    @apply bg-brand-white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    top: 70px;
-    width: 100%;
-    z-index: 9999;
+    right: 0;
+    top: 28px;
+}
+
+.nav__dropdown .nav__link {
+    margin: 1rem;
+    text-align: right;
+}
+
+.nav__dropdown .nav__link:first-child {
+    margin-top: 1.5rem;
+}
+
+.nav__dropdown .nav__link:last-child {
+    margin-bottom: 1.5rem;
 }
 
 .nav__mobile-open {
@@ -48,11 +64,11 @@
 
 @screen lg {
     .nav__link {
-        @apply text-center mx-6;
+        @apply mx-6;
     }
 
     .nav__link:last-of-type {
-        @apply mr-0 ml-6;
+        @apply ml-6;
     }
 
     /* .nav__dropdown {
