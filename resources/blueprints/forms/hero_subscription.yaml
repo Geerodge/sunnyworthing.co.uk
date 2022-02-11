@@ -1,0 +1,17 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email_address
+        field:
+          placeholder: 'Enter email address'
+          input_type: email
+          antlers: false
+          display: 'Email address'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required

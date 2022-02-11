@@ -1,8 +1,181 @@
+.hidden-phone {
+    display: none;
+}
+
 .hero {
-    @apply mx-auto max-w-screen-max;
+    @apply mx-auto;
     height: 87%;
 }
 
-.hero__text {
-    @apply flex flex-col items-center justify-center h-full mx-auto text-center px-4;
+.hero__container {
+    @apply h-full;
+}
+
+.hero__inner {
+    @apply relative flex flex-col items-center justify-center h-full px-4;
+    max-width: 1920px;
+}
+
+.hero__text-container {
+    @apply absolute top-32 px-4;
+}
+
+.hero__heading {
+    @apply font-serif font-extrabold text-left;
+    font-size: 2.3rem; 
+    font-weight: 700;
+}
+
+.hero__pre-text {
+    @apply uppercase text-left;
+}
+
+.hero__post-text {
+    @apply text-left;
+}
+
+.hero__form {
+    @apply absolute bg-brand-white rounded-lg w-90% bottom-28;
+}
+
+.hero__form form {
+    @apply flex;
+}
+
+.hero__form input {
+    @apply rounded-lg;
+}
+
+.hero__form input::placeholder {
+    @apply text-sm text-brand-gray/60 !important;
+}
+
+.hero__form button {
+    @apply bg-brand-orange uppercase text-sm font-semibold tracking-wider rounded-lg p-2 m-1;
+    min-width: 25%;
+}
+
+.hero__form button:after {
+    @apply text-lg;
+    content: "\01F862";
+    vertical-align: -30%;
+}
+
+.hero__form form input[type="email"] {
+    @apply text-base !important;
+}
+
+@screen xs {
+
+    .hero__heading {
+        font-size: 2.5rem;
+    }
+}
+
+@screen sm {
+
+    .hero__form button:after {
+        @apply text-xl;
+    }
+
+    .hero__form {
+        @apply w-70%;
+    }
+}
+
+@screen md {
+
+    .hero__form {
+        @apply w-70%;
+    }
+
+    .hero__heading {
+        font-size: 3rem;
+    }
+
+    .hero__form button {
+        @apply text-brand-orange bg-brand-white uppercase font-semibold tracking-wider text-base text-right p-0 m-5;
+        min-width: 40%;
+    }
+
+    .hero__form button:after {
+        @apply text-base;
+        content: "🡢";
+        margin: 0 .5rem;
+        position: relative;
+        right: 0;
+        -webkit-transition: all 0.75s;
+        transition: all 0.75s;
+        vertical-align: 0%;
+    }
+
+    .hero__form button:hover {
+        @apply opacity-75;
+    }
+
+    .hero__form button:hover:after {
+        right: -10px;
+    }
+
+    .hidden-phone {
+        @apply inline;
+    }
+}
+
+@screen lg {
+
+    .hero__form {
+        @apply w-60%;
+    }
+
+    .hero__form button {
+        @apply pr-0 pb-0 pl-0 pt-1;
+        min-width: 28%;
+    }
+
+    .hero__heading {
+        font-size: 3.5rem;
+    }
+}
+
+@screen xl {
+
+    .hero__inner {
+        @apply items-end;
+    }
+
+    .hero__container {
+        @apply mr-12;
+        justify-content: right;
+        flex-direction: row;
+    }
+
+    .hero__text-container,
+    .hero__form {
+        @apply w-40%;
+    }
+
+    .hero__form {
+        @apply bottom-40;
+    }
+
+    .hero__form button {
+        min-width: 35%;
+    }
+}
+
+@screen xxl {
+
+    .hero__text-container,
+    .hero__form {
+        max-width: 35%;
+    }
+}
+
+@screen max {
+
+    .hero__text-container,
+    .hero__form {
+        max-width: 30%;
+    }
 }
