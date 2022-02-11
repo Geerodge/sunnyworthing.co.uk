@@ -4,20 +4,20 @@
 
 .hero {
     @apply mx-auto;
-    height: 87%;
+    height: calc(100vh - 8rem);
 }
 
 .hero__container {
-    @apply h-full;
+    @apply relative h-full;
 }
 
 .hero__inner {
-    @apply relative flex flex-col items-center justify-center h-full px-4;
-    max-width: 1920px;
+    @apply absolute flex flex-col items-center justify-center h-full w-full px-4;
+    transform: translate(0, -8rem)
 }
 
 .hero__text-container {
-    @apply absolute top-32 px-4;
+    @apply relative mb-10;
 }
 
 .hero__heading {
@@ -35,7 +35,7 @@
 }
 
 .hero__form {
-    @apply absolute bg-brand-white rounded-lg w-90% bottom-28;
+    @apply relative bg-brand-white rounded-lg w-full;
 }
 
 .hero__form form {
@@ -74,19 +74,21 @@
 
 @screen sm {
 
-    .hero__form button:after {
-        @apply text-xl;
+    .hero__text-container,
+    .hero__form {
+        @apply w-90%;
     }
 
-    .hero__form {
-        @apply w-70%;
+    .hero__form button:after {
+        @apply text-xl;
     }
 }
 
 @screen md {
 
+    .hero__text-container,
     .hero__form {
-        @apply w-70%;
+        @apply w-80%;
     }
 
     .hero__heading {
@@ -124,8 +126,9 @@
 
 @screen lg {
 
+    .hero__text-container,
     .hero__form {
-        @apply w-60%;
+        @apply w-70%;
     }
 
     .hero__form button {
@@ -144,23 +147,13 @@
         @apply items-end;
     }
 
-    .hero__container {
-        @apply mr-12;
-        justify-content: right;
-        flex-direction: row;
-    }
-
     .hero__text-container,
     .hero__form {
-        @apply w-40%;
+        @apply w-50% mr-10;
     }
 
     .hero__form {
-        @apply bottom-40;
-    }
-
-    .hero__form button {
-        min-width: 35%;
+        @apply absolute bottom-0;
     }
 }
 
@@ -168,14 +161,27 @@
 
     .hero__text-container,
     .hero__form {
-        max-width: 35%;
+        @apply w-40%;
     }
+
+    .hero__form {
+        @apply bottom-10;
+    }
+
 }
 
 @screen max {
+    
+    .hero__inner {
+        width: 90%;
+    }
 
     .hero__text-container,
     .hero__form {
-        max-width: 30%;
+        max-width: 35%;
+    }
+
+    .hero__form {
+        @apply bottom-20;
     }
 }
