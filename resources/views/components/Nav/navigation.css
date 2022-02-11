@@ -64,6 +64,7 @@
 }
 
 @screen lg {
+
     .nav__link {
         @apply mx-6;
     }
