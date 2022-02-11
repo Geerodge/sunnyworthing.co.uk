@@ -3,33 +3,39 @@
 }
 
 .hero {
-    @apply mx-auto max-w-screen-max;
+    @apply mx-auto;
     height: 87%;
 }
 
 .hero__container {
-    @apply relative flex flex-col items-center justify-center h-full mx-auto px-4;
+    @apply h-full;
+}
+
+.hero__inner {
+    @apply relative flex flex-col items-center justify-center h-full px-4;
+    max-width: 1920px;
 }
 
 .hero__text-container {
-    @apply mb-50%;
+    @apply absolute top-32 px-4;
 }
 
 .hero__heading {
-    @apply font-serif font-extrabold text-left w-full;
-    font-size: clamp(2.5rem, 5vw, 4rem); 
+    @apply font-serif font-extrabold text-left;
+    font-size: 2.3rem; 
+    font-weight: 700;
 }
 
 .hero__pre-text {
-    @apply uppercase text-left w-full;
+    @apply uppercase text-left;
 }
 
 .hero__post-text {
-    @apply text-left w-full;
+    @apply text-left;
 }
 
 .hero__form {
-    @apply absolute bg-brand-white rounded-lg w-90% bottom-20;
+    @apply absolute bg-brand-white rounded-lg w-90% bottom-28;
 }
 
 .hero__form form {
@@ -41,21 +47,18 @@
 }
 
 .hero__form input::placeholder {
-    @apply text-sm text-brand-grayLight !important;
+    @apply text-sm text-brand-gray/60 !important;
 }
 
 .hero__form button {
-    @apply bg-brand-orange uppercase text-sm font-semibold tracking-wider text-left rounded-lg p-2 m-1;
-    min-width: 20%;
-    vertical-align: middle;
+    @apply bg-brand-orange uppercase text-sm font-semibold tracking-wider rounded-lg p-2 m-1;
+    min-width: 25%;
 }
 
 .hero__form button:after {
-    @apply text-base;
-    content: "🡢";
-    display: block;
-    width: 100%;
-    text-align: center;
+    @apply text-lg;
+    content: "\01F862";
+    vertical-align: -30%;
 }
 
 .hero__form form input[type="email"] {
@@ -64,37 +67,34 @@
 
 @screen xs {
 
-    .hero__form {
-        @apply bottom-80;
-    }
-
-    .hero__text-container {
-        @apply mb-60%;
-    }
-
-    .hero__form button:after {
-        @apply text-lg;
+    .hero__heading {
+        font-size: 2.5rem;
     }
 }
 
 @screen sm {
+
     .hero__form button:after {
         @apply text-xl;
+    }
+
+    .hero__form {
+        @apply w-70%;
     }
 }
 
 @screen md {
 
     .hero__form {
-        @apply bottom-20 w-60%;
+        @apply w-70%;
     }
 
-    .hero__text-container {
-        @apply mb-20%;
+    .hero__heading {
+        font-size: 3rem;
     }
 
     .hero__form button {
-        @apply text-brand-orange bg-brand-white uppercase font-semibold tracking-wider text-base p-0 m-0;
+        @apply text-brand-orange bg-brand-white uppercase font-semibold tracking-wider text-base text-right p-0 m-5;
         min-width: 40%;
     }
 
@@ -106,10 +106,7 @@
         right: 0;
         -webkit-transition: all 0.75s;
         transition: all 0.75s;
-
-        display: initial;
-        width: initial;
-        text-align: initial;
+        vertical-align: 0%;
     }
 
     .hero__form button:hover {
@@ -121,29 +118,64 @@
     }
 
     .hidden-phone {
-        display: inline;
+        @apply inline;
     }
 }
 
+@screen lg {
 
-/* .hero__form button {
-    @apply text-brand-orange uppercase font-semibold tracking-wider text-xs;
-    min-width: 40%;
+    .hero__form {
+        @apply w-60%;
+    }
+
+    .hero__form button {
+        @apply pr-0 pb-0 pl-0 pt-1;
+        min-width: 28%;
+    }
+
+    .hero__heading {
+        font-size: 3.5rem;
+    }
 }
 
-.hero__form button:after {
-    content: "🡢";
-    margin: 0 .25rem;
-    position: relative;
-    right: 0;
-    -webkit-transition: all 0.75s;
-    transition: all 0.75s;
+@screen xl {
+
+    .hero__inner {
+        @apply items-end;
+    }
+
+    .hero__container {
+        @apply mr-12;
+        justify-content: right;
+        flex-direction: row;
+    }
+
+    .hero__text-container,
+    .hero__form {
+        @apply w-40%;
+    }
+
+    .hero__form {
+        @apply bottom-40;
+    }
+
+    .hero__form button {
+        min-width: 35%;
+    }
 }
 
-.hero__form button:hover {
-    @apply opacity-75;
+@screen xxl {
+
+    .hero__text-container,
+    .hero__form {
+        max-width: 35%;
+    }
 }
 
-.hero__form button:hover:after {
-    right: -10px;
-} */
+@screen max {
+
+    .hero__text-container,
+    .hero__form {
+        max-width: 30%;
+    }
+}
