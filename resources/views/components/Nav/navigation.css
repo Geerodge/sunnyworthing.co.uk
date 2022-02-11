@@ -1,5 +1,5 @@
 .nav__container {
-    @apply w-full h-32;
+    @apply w-full h-32 z-40;
     position: relative;
 }
 
@@ -41,16 +41,17 @@
 }
 
 .nav__dropdown .nav__link {
-    margin: 1rem;
+    margin: 0;
+    padding: 1rem;
     text-align: right;
 }
 
 .nav__dropdown .nav__link:first-child {
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .nav__dropdown .nav__link:last-child {
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .nav__mobile-open {
