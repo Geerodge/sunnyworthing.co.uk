@@ -11,6 +11,10 @@
     }
 }
 
+.image-aside-multi__list {
+    list-style-image: url('../../../../public/assets/icons/check-icon.svg');
+}
+
 @screen lg {
     .image-aside-multi__container {
         @apply flex;

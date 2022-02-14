@@ -4,7 +4,7 @@
 
 .hero {
     @apply mx-auto;
-    height: calc(100vh);
+    height: calc(100vh - 8rem);
 }
 
 .hero__container {

@@ -15,6 +15,9 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
+      options:
+        left: Left
+        right: Right
   -
     handle: background
     field:
@@ -30,6 +33,12 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
+      max_items: 1
+      default: bg-brand-white
+      options:
+        bg-brand-white: White
+        bg-brand-gray: 'Grey Blue'
+      placeholder: 'Select a background color'
   -
     handle: subtitle
     field:
@@ -53,37 +62,20 @@ fields:
       listable: hidden
       instructions_position: above
   -
-    handle: content
+    handle: textarea
     field:
-      always_show_set_button: false
-      buttons:
-        - h2
-        - h3
-        - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - quote
-        - anchor
-        - image
-        - table
-        - h1
-        - Paragraph
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
       antlers: false
-      display: Content
-      type: bard
-      icon: bard
+      display: Textarea
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: list
+    field:
+      display: List
+      type: list
+      icon: list
       listable: hidden
       instructions_position: above
   -
@@ -100,17 +92,3 @@ fields:
       instructions_position: above
   -
     import: button
-  -
-    handle: button_colour
-    field:
-      multiple: false
-      clearable: false
-      searchable: true
-      taggable: false
-      push_tags: false
-      cast_booleans: false
-      display: 'Button Colour'
-      type: select
-      icon: select
-      listable: hidden
-      instructions_position: above

@@ -22,6 +22,8 @@ fields:
       instructions_position: above
   -
     handle: button_color
+    max_items: 1
+    default: btn--primary
     field:
       options:
         btn--primary: Primary

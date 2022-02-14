@@ -1,16 +1,24 @@
-<section class="section image-aside-multi {{ background }}"
+<section class="section image-aside-multi {{ background:value }}"
     id={{ anchor }}>
     <div class="image-aside-multi__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
         <div class="image-aside-multi__text py-8 lg:py-12">
+            <p class="uppercase {{ background:value  === "bg-brand-white" ? "text-brand-primary opacity-75" : "text-brand-white" }}">
+                {{ subtitle }}
+            </p>
             <h2 class="heading-2 font-sans max-w-xl
-                        {{ background === "bg-brand-primary" ? "text-brand-white" : "text-brand-primary" }}">
+                {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
                 {{ title }}
             </h2>
-            <p class="p p-base mt-6 mb-12 {{ background === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
-                {{ bard }}
+            <p class="p p-base mt-6 mb-6 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                {{ textarea }}
             </p>
+            <ul class="image-aside-multi__list p p-base mt-6 mb-12 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                {{ list }}
+                    <li>{{ value }}</li>
+                {{ /list }}
+            </ul>
             <a href="{{ button_url }}"
-                class="btn small {{ button_color }}">
+                class="btn small {{ button_color:value }}">
                 {{ button_text }}
             </a>
         </div>

@@ -6,7 +6,7 @@
         {{ partial:components/ImageAside/image-aside image=image background=background image_side=image_side }}
     {{ /if }}
     {{ if type === "image_aside_multi" }}
-        {{ partial:components/ImageAsideMulti/image-aside-multi image=image background=background image_side=image_side }}
+        {{ partial:components/ImageAsideMulti/image-aside-multi image=image background=background image_side=image_side list=list }}
     {{ /if }}
     {{ if type === "cards" }}
         {{ partial:components/Cards/cards }}
@@ -15,6 +15,6 @@
         {{ partial:components/Bard/bard background=background }}
     {{ /if }}
     {{ if type === "accordion" }}
-        {{ partial:components/Accordion/accordion  }}
+        {{ partial:components/Accordion/accordion }}
     {{ /if }}
 {{ /block_builder }}
