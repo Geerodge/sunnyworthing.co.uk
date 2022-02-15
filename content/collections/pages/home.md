@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1644872086
+updated_at: 1644928915
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -84,7 +84,7 @@ block_builder:
       - worthing-pier.jpg
       - worthing-splash-point.jpg
     button_text: 'Read more'
-    button_color: btn--primary
+    button_color: button--primary
     type: image_aside_multi
     enabled: true
     bard:
@@ -102,6 +102,13 @@ block_builder:
       - 'Family friendly'
       - 'Walks and nature'
       - History
+    image:
+      - cissbury-ring.jpg
+      - dome-cinema.jpg
+      - splash-point.jpg
+      - south-downs.jpg
+      - worthing-pier.jpg
+      - worthing-splash-point.jpg
   -
     cards:
       -

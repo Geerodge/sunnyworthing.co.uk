@@ -79,7 +79,7 @@ fields:
       listable: hidden
       instructions_position: above
   -
-    handle: images
+    handle: image
     field:
       mode: list
       restrict: false

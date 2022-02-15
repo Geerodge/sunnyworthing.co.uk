@@ -14,7 +14,6 @@
 .hero__inner {
     @apply absolute flex flex-col items-center justify-center h-full w-full px-4;
     transform: translate(0, -8rem);
-    /* max-width: 1920px; */
     max-width: 88rem;
 }
 

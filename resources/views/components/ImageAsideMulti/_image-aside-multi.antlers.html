@@ -17,16 +17,35 @@
                     <li>{{ value }}</li>
                 {{ /list }}
             </ul>
-            <a href="{{ button_url }}"
-                class="btn small {{ button_color:value }}">
+            <a class="button {{ button_color:value }}" href="{{ button_url }}">
                 {{ button_text }}
             </a>
         </div>
-        <div class="image-aside-multi__image pb-8 px-4 lg:p-0">
-            {{ if image }}
-                <img src="{{ glide:image width="675" height="468" }}" loading="lazy"
-                    alt="{{ title }}" />
-            {{ /if }}
+        <div class="image-aside-multi__carousel-wrapper">
+            <div class="image-aside-multi__carousel">
+                {{ image }}
+                    <img
+                        class="image-aside-multi__carousel-photo{{ if first }} initial{{ /if }}"
+                        src="{{ glide:url width="auto" height="auto" }}"
+                        loading="lazy"
+                        alt="{{ alt }}" 
+                    />
+                {{ /image }}
+                <div class="image-aside-multi__carousel-button--next"></div>
+                <div class="image-aside-multi__carousel-button--prev"></div>
+            </div>
+        </div>
+        <div class="image-aside-multi__images-wrapper">
+            <div class="image-aside-multi__images">
+                {{ image }}
+                    <img
+                        class="image-aside-multi__images-actual"
+                        src="{{ glide:url width="auto" height="auto" }}"
+                        loading="lazy"
+                        alt="{{ alt }}" 
+                    />
+                {{ /image }}
+            </div>
         </div>
     </div>
 </section>

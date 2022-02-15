@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'South Downs'
 size: 46745
 last_modified: 1644850415
 width: 800
 height: 501
 mime_type: image/jpeg
+duration: null
