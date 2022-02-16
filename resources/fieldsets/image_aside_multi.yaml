@@ -90,5 +90,7 @@ fields:
       icon: assets
       listable: hidden
       instructions_position: above
+      max_files: 5
+      instructions: 'Minimum and maximum of 5 images here'
   -
     import: button

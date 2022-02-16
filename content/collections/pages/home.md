@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1644928915
+updated_at: 1645018263
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -103,7 +103,6 @@ block_builder:
       - 'Walks and nature'
       - History
     image:
-      - cissbury-ring.jpg
       - dome-cinema.jpg
       - splash-point.jpg
       - south-downs.jpg

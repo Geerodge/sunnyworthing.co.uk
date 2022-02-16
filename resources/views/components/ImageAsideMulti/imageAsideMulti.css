@@ -14,7 +14,7 @@
     }
 }
 
-.image-aside-multi__container {
+.image-aside-multi__carousel {
     & img {
         @apply w-full object-cover;
         min-height: 20rem;
@@ -47,7 +47,7 @@
 .image-aside-multi__carousel-photo {
     opacity: 0;
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
     margin: auto;
     padding: 1rem 4rem;
@@ -78,7 +78,7 @@
 .image-aside-multi__carousel-button--prev,
 .image-aside-multi__carousel-button--next {
     position: absolute;
-    top:50%;
+    top: 50%;
     width: 3rem;
     height: 3rem;
     background-color: #FFF;
@@ -90,11 +90,11 @@
 }
 
 .image-aside-multi__carousel-button--prev {
-    left:0;
+    left: 0;
 }
 
 .image-aside-multi__carousel-button--next {
-    right:0;
+    right: 0;
 }
 
 .image-aside-multi__carousel-button--prev::after,
@@ -118,7 +118,7 @@
 @screen lg {
     
     .image-aside-multi__container {
-        @apply flex flex-wrap;
+        @apply flex flex-wrap items-center justify-center;
     }
 
     .image--left {
@@ -151,11 +151,23 @@
     }
     
     .image-aside-multi__images {
-        @apply flex flex-wrap;
+        @apply flex flex-col flex-wrap gap-5 items-center justify-center;
+        height: 700px;
+        max-width: 100%;
     }
 
-    .image-aside-multi__images-actual {
-        @apply p-1;
-        max-width: 33.333%;
+    .image-aside-multi__images-actual:nth-child(1),
+    .image-aside-multi__images-actual:nth-child(2),
+    .image-aside-multi__images-actual:nth-child(3) {
+        @apply w-full object-cover;
+        height: 24.583%; /* 33.333% minus 8.75%. 8.75% is equal to gap-5/20px */
+        max-width: 50%;
+    }
+
+    .image-aside-multi__images-actual:nth-child(4),
+    .image-aside-multi__images-actual:nth-child(5) {
+        @apply w-full object-cover;
+        height: 41.25%; /* 50% minus 8.75%. 8.75% is equal to gap-5/20px */
+        max-width: 50%;
     }
 }
