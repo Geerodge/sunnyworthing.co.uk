@@ -1,0 +1,33 @@
+<section class="section image-cards-aside">
+    <div class="image-cards-aside__container">
+        <div class="image-cards-aside__card-container px-8 lg:px-12">
+            {{ card }}
+                <div class="image-cards-aside__card{{ if first }} initial{{ /if }}">
+                    <div class="image-cards-aside__card-image">
+                        {{ background_image }}
+                            <img 
+                                class="image-cards-aside__card-image-actual"
+                                src="{{ glide:url width="500" height="500" }}" loading="lazy"
+                                alt="{{ alt }}"
+                            />
+                        {{ /background_image }}
+                    </div>
+                    <div class="image-cards-aside__card-content">
+                        <p class="image-cards-aside__card-description">{{ description }}</p>
+                        <h3 class="image-cards-aside__card-title heading-4">
+                            {{ title }}
+                        </h3>
+                    </div>
+                </div>
+            {{ /card }}
+        </div>
+        <div class="image-cards-aside__content-container px-8 lg:px-12">
+            <p class="p p-base image-cards-aside__subtitle">{{ subtitle }}</p>
+            <h2 class="image-cards-aside__heading heading-2">{{ title }}</h2>
+            <p class="p p-base image-cards-aside__text">{{ textarea }}</p>
+            <a class="button {{ button_color:value }}" href="{{ button_url }}">
+                {{ button_text }}
+            </a>
+        </div>
+    </div>
+</section>

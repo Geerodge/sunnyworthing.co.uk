@@ -8,6 +8,9 @@
     {{ if type === "image_aside_multi" }}
         {{ partial:components/ImageAsideMulti/image-aside-multi image=image background=background image_side=image_side list=list }}
     {{ /if }}
+    {{ if type === "image_cards_aside" }}
+        {{ partial:components/ImageCardsAside/image-cards-aside image=image }}
+    {{ /if }}
     {{ if type === "cards" }}
         {{ partial:components/Cards/cards }}
     {{ /if }}

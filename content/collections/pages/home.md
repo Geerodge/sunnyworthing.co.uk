@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1645018263
+updated_at: 1645031260
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -109,37 +109,30 @@ block_builder:
       - worthing-pier.jpg
       - worthing-splash-point.jpg
   -
-    cards:
+    card:
       -
-        title: 'Maecenas sed diam'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        button_color: btn--primary
+        title: 'Number 24'
+        description: 'A stylish café bar with something for everyone'
+        background_image: food-and-drink/number-24.jpg
         type: new_set
         enabled: true
-        image: placeholder.jpg
       -
-        button_color: btn--primary
+        title: 'Beach House'
+        description: 'Relax, meet friends, and watch the world go by'
+        background_image: food-and-drink/beach-house.jpg
         type: new_set
         enabled: true
-        title: 'Maecenas sed'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        image: placeholder.jpg
       -
-        title: 'Maecenas sed diam'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        button_color: btn--primary
+        title: 'Corner House'
+        description: 'A Free House with a superbly kept garden'
+        background_image: food-and-drink/corner-house.jpg
         type: new_set
         enabled: true
-        image: placeholder.jpg
-    type: cards
+    title: 'Food and Drink'
+    subtitle: 'Best places in Worthing'
+    textarea: 'Explore Worthing’s restaurants serving award winning food. Looking for a drink? We have lots of cafés, bars and pubs.'
+    button_text: 'Find your place'
+    button_color: button--primary
+    type: image_cards_aside
     enabled: true
 ---

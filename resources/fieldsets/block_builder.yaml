@@ -35,6 +35,11 @@ fields:
           fields:
             -
               import: image_aside_multi
+        image_cards_aside:
+          display: 'Image Cards Aside'
+          fields:
+            -
+              import: image_cards_aside
       display: 'Block Builder'
       type: replicator
       icon: replicator

@@ -1,0 +1,50 @@
+title: 'Image Cards Aside'
+fields:
+  -
+    handle: card
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: 'New Set'
+          fields:
+            -
+              import: image_card
+      display: 'Image Card'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: Subtitle
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: Textarea
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    import: button
