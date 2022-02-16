@@ -152,7 +152,7 @@
     
     .image-aside-multi__images {
         @apply flex flex-col flex-wrap gap-5 items-center justify-center;
-        height: 700px;
+        height: 100vh;
         max-width: 100%;
     }
 
