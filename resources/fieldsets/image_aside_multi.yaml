@@ -1,0 +1,96 @@
+title: 'Image Aside Multi'
+fields:
+  -
+    handle: image_side
+    field:
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Image Side'
+      type: select
+      icon: select
+      width: 50
+      listable: hidden
+      instructions_position: above
+      options:
+        left: Left
+        right: Right
+  -
+    handle: background
+    field:
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Background
+      type: select
+      icon: select
+      width: 50
+      listable: hidden
+      instructions_position: above
+      max_items: 1
+      default: bg-brand-white
+      options:
+        bg-brand-white: White
+        bg-brand-gray: 'Grey Blue'
+      placeholder: 'Select a background color'
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: Subtitle
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: Textarea
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: list
+    field:
+      display: List
+      type: list
+      icon: list
+      listable: hidden
+      instructions_position: above
+  -
+    handle: image
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Images
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      max_files: 5
+      instructions: 'Minimum and maximum of 5 images here'
+  -
+    import: button

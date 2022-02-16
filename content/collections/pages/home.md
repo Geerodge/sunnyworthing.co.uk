@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1644239484
+updated_at: 1645018263
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -18,20 +18,96 @@ block_builder:
   -
     image_side: right
     background: bg-brand-white
-    title: 'Duis mollis, est non commodo luctus'
-    tag: 'About Stone’s Throw Farm'
-    textarea: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit (~30–40 words).'
-    buttons:
+    subtitle: 'Fun activites'
+    title: 'Things To Do In Worthing'
+    content:
       -
-        button_text: 'Read our story'
-        button_url: /
-        button_color: btn--primary
-        type: button
-        enabled: true
-    type: image_aside
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'There’s plenty of attractions and things to do in Worthing and the surrounding areas.'
+      -
+        type: bullet_list
+        content:
+          -
+            type: list_item
+            content:
+              -
+                type: paragraph
+                attrs:
+                  class: null
+                content:
+                  -
+                    type: text
+                    text: 'Fun activities and games'
+          -
+            type: list_item
+            content:
+              -
+                type: paragraph
+                attrs:
+                  class: null
+                content:
+                  -
+                    type: text
+                    text: 'Family friendly'
+          -
+            type: list_item
+            content:
+              -
+                type: paragraph
+                attrs:
+                  class: null
+                content:
+                  -
+                    type: text
+                    text: 'Walks and Nature'
+          -
+            type: list_item
+            content:
+              -
+                type: paragraph
+                attrs:
+                  class: null
+                content:
+                  -
+                    type: text
+                    text: History
+    images:
+      - cissbury-ring.jpg
+      - dome-cinema.jpg
+      - south-downs.jpg
+      - splash-point.jpg
+      - worthing-pier.jpg
+      - worthing-splash-point.jpg
+    button_text: 'Read more'
+    button_color: button--primary
+    type: image_aside_multi
     enabled: true
-    anchor: ourFarm
-    image: placeholder.jpg
+    bard:
+      -
+        type: paragraph
+        attrs:
+          class: 'p p-base font-sans'
+        content:
+          -
+            type: text
+            text: test
+    textarea: 'There’s plenty of attractions and things to do in Worthing and the surrounding areas.'
+    list:
+      - 'Fun activities and games'
+      - 'Family friendly'
+      - 'Walks and nature'
+      - History
+    image:
+      - dome-cinema.jpg
+      - splash-point.jpg
+      - south-downs.jpg
+      - worthing-pier.jpg
+      - worthing-splash-point.jpg
   -
     cards:
       -

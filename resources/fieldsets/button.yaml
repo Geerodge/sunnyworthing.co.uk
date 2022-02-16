@@ -24,8 +24,8 @@ fields:
     handle: button_color
     field:
       options:
-        btn--primary: Primary
-        btn--secondary: Secondary
+        button--primary: Primary
+        button--secondary: Secondary
       multiple: false
       clearable: false
       searchable: true

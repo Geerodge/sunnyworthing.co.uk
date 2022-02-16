@@ -1,3 +1,11 @@
 .button {
-    @apply px-8 py-4 inline-flex bg-brand-primary text-brand-white transition-colors hover:bg-brand-secondary;
+    @apply px-16 pt-4 pb-3 inline-flex justify-center items-center rounded-lg border-0 uppercase;
+}
+
+.button--primary {
+    @apply bg-brand-blueLight text-brand-white transition-colors hover:bg-brand-primary;
+}
+
+.button--secondary {
+    @apply bg-brand-blueLight text-brand-white transition-colors hover:bg-brand-white hover:text-brand-primary;
 }

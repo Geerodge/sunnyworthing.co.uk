@@ -1,0 +1,51 @@
+<section class="section image-aside-multi {{ background:value }}"
+    id={{ anchor }}>
+    <div class="image-aside-multi__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
+        <div class="image-aside-multi__text p-8 lg:p-12">
+            <p class="uppercase {{ background:value  === "bg-brand-white" ? "text-brand-primary opacity-75" : "text-brand-white" }}">
+                {{ subtitle }}
+            </p>
+            <h2 class="heading-2 font-sans max-w-xl
+                {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                {{ title }}
+            </h2>
+            <p class="p p-base mt-6 mb-6 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                {{ textarea }}
+            </p>
+            <ul class="image-aside-multi__list p p-base mt-6 mb-12 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                {{ list }}
+                    <li>{{ value }}</li>
+                {{ /list }}
+            </ul>
+            <a class="button {{ button_color:value }}" href="{{ button_url }}">
+                {{ button_text }}
+            </a>
+        </div>
+        <div class="image-aside-multi__carousel-wrapper">
+            <div class="image-aside-multi__carousel">
+                {{ image }}
+                    <img
+                        class="image-aside-multi__carousel-photo{{ if first }} initial{{ /if }}"
+                        src="{{ glide:url width="auto" height="auto" }}"
+                        loading="lazy"
+                        alt="{{ alt }}" 
+                    />
+                {{ /image }}
+                <div class="image-aside-multi__carousel-button--next"></div>
+                <div class="image-aside-multi__carousel-button--prev"></div>
+            </div>
+        </div>
+        <div class="image-aside-multi__images-wrapper">
+            <div class="image-aside-multi__images">
+                {{ image }}
+                    <img
+                        class="image-aside-multi__images-actual"
+                        src="{{ glide:url width="auto" height="auto" }}"
+                        loading="lazy"
+                        alt="{{ alt }}" 
+                    />
+                {{ /image }}
+            </div>
+        </div>
+    </div>
+</section>

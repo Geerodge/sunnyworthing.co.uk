@@ -30,6 +30,11 @@ fields:
           fields:
             -
               import: accordion
+        image_aside_multi:
+          display: 'Image Aside Multi'
+          fields:
+            -
+              import: image_aside_multi
       display: 'Block Builder'
       type: replicator
       icon: replicator

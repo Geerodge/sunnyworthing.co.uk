@@ -34,7 +34,7 @@ module.exports = {
         yellow: "#F7B100",
         orange: "#F47F00",
         //////-----------
-        primary: "#2D3A4C",
+        primary: "#1B3D6A",
         secondary: "#016699",
       },
       black: colors.black,
