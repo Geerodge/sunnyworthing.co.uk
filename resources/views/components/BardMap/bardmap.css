@@ -1,11 +1,22 @@
 .bardmap {
   @apply max-w-screen-max mx-auto;
 }
+.bardmap h1 {
+  @apply font-serif font-extrabold mb-6;
+  font-size: 2.3rem; 
+  font-weight: 700;
+}
 
 .bardmap h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   line-height: 1.4;
   @apply font-sans max-w-xl mb-6;
+}
+
+.bardmap h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1;
+  @apply font-sans pb-4;
 }
 
 .bardmap ul {
@@ -17,7 +28,7 @@
 }
 
 .bardmap__images-container {
-  @apply flex flex-col flex-wrap items-center justify-center;
+  @apply flex flex-col flex-wrap items-center justify-center my-6;
 }
 
 .bardmap__image {
@@ -56,5 +67,9 @@
 
   .bardmap ul {
     @apply list-none;
+  }
+
+  .bardmap__image {
+    @apply w-1/2;
   }
 }

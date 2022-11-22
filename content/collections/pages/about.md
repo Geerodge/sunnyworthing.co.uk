@@ -3,7 +3,7 @@ id: cb57477d-5748-4c4c-a535-33fd4699c002
 blueprint: pages
 title: About
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669075824
+updated_at: 1669131831
 block_builder:
   -
     image: worthing-pier-sunset.jpg
@@ -217,6 +217,7 @@ block_builder:
         type: new_set
         enabled: true
         center_align: 'yes'
+        button_url: 'entry::40e6119c-7904-4f58-8550-09a871bd639d'
       -
         image: about/cissbury-ring.png
         title: 'Cissbury Ring'
@@ -256,6 +257,7 @@ block_builder:
         type: new_set
         enabled: true
         center_align: 'yes'
+        button_url: 'entry::a8e86c6a-1d24-4f57-a34b-19cc85fc08b5'
     type: cards
     enabled: true
 ---

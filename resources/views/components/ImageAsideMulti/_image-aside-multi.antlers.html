@@ -12,14 +12,22 @@
             <p class="p p-base mt-6 mb-6 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
                 {{ textarea }}
             </p>
-            <ul class="image-aside-multi__list p p-base mt-6 mb-12 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
-                {{ list }}
-                    <li>{{ value }}</li>
-                {{ /list }}
-            </ul>
-            <a class="button {{ button_color:value }}" href="{{ button_url }}">
-                {{ button_text }}
-            </a>
+            {{ if list != null }}
+                <ul class="image-aside-multi__list p p-base mt-6 mb-12 {{ background:value  === "bg-brand-white" ? "text-brand-primary" : "text-brand-white" }}">
+                    {{ list }}
+                        <li>{{ value }}</li>
+                    {{ /list }}
+                </ul>
+            {{ else }}
+                {{# nothing #}}
+            {{ /if }}
+            {{ if button_text != null }}
+                <a class="button {{ button_color:value }}" href="{{ button_url }}">
+                    {{ button_text }}
+                </a>
+            {{ else }}
+                {{# nothing #}}
+            {{ /if }}
         </div>
         <div class="image-aside-multi__carousel-wrapper">
             <div class="image-aside-multi__carousel">

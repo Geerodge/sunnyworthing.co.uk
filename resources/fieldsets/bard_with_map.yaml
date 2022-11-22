@@ -22,6 +22,7 @@ fields:
     field:
       always_show_set_button: false
       buttons:
+        - h1
         - h2
         - h3
         - bold
@@ -31,14 +32,10 @@ fields:
         - removeformat
         - quote
         - anchor
-        - image
-        - table
-        - 'Introduction Paragraph'
         - Paragraph
-        - 'Small Paragraph'
-        - 'Quote Paragraph'
         - underline
         - strikethrough
+        - image
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -57,6 +54,19 @@ fields:
       instructions_position: above
   -
     import: buttons
+  -
+    handle: image
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 3
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
   -
     handle: google_map_field
     field:

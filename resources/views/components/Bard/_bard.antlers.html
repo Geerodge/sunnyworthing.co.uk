@@ -1,12 +1,11 @@
 <section class="section bard {{ background }} max-w-screen-max mx-auto">
-    <div class="pt-6 pb-6 max-w-3xl mx-auto px-6 xxl:max-w-4xl xxl:text-center">
+    <div class="pt-6 pb-6 max-w-3xl mx-auto px-6 xxl:max-w-4xl xxl:text-center xxl:pb-0">
             <div class={{ background === "bg-brand-primary" ? "text-white" : "text-brand-black" }}>
             {{ bard }}
         </div>
         {{ buttons }}
-            <div class="mt-12">
-                <a href="{{ button_url }}" class="btn
-                {{ button_color }}">
+            <div class="bard__button {{ center_align:value === 'yes' ? 'text-center' : '' }}">
+                <a class="button {{ button_color:value }}" href="{{ button_url }}"{{ if button_url | contains:sunnyworthing.co.uk }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>
                     {{ button_text }}
                 </a>
             </div>

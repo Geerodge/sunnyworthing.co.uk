@@ -2,11 +2,14 @@
     <div class="cards__container">
         {{ cards }}
             <div class="card">
-                <div class="card__image">
-                    <img src="{{ glide:image width="366" height="361" }}" loading="lazy"
-                        alt="{{ title }}"
-                        class="{{ center_align:value === "yes" ? 'm-auto' : 'm-auto w-full h-full' }}" />
-                </div>
+                {{ if image }}
+                    <div class="card__image">
+                        <img src="{{ glide:image width="366" height="361" }}" loading="lazy"
+                            alt="{{ title }}"
+                            class="{{ center_align:value === "yes" ? 'm-auto' : 'm-auto w-full h-full' }}" />
+                    </div>
+                {{ else }}
+                {{ /if }}
                 <div class="card__content">
                     <div class="heading-4 text-brand-black font-sans mt-4 {{ center_align:value === 'yes' ? 'text-center' : '' }}">
                         {{ title }}
@@ -16,7 +19,7 @@
                     </p>
                 </div>
                 <div class="card__button {{ center_align:value === 'yes' ? 'text-center' : '' }}">
-                    <a class="button {{ button_color:value }}" href="{{ button_url }}">
+                    <a class="button {{ button_color:value }}" href="{{ button_url }}" {{ if button_url | contains:sunnyworthing.co.uk }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>
                         {{ button_text }}
                     </a>
                 </div>
