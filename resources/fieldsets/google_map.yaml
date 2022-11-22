@@ -1,0 +1,16 @@
+title: 'Google Map'
+fields:
+  -
+    handle: google_map_field
+    field:
+      initial_type: roadmap
+      initial_zoom: '16'
+      maptypes: true
+      markers: true
+      geocoder: false
+      showControls: false
+      display: 'Google Map Field'
+      type: google_map
+      icon: earth
+      listable: hidden
+      instructions_position: above

@@ -1,11 +1,17 @@
 {{ if template === "default" }}
-    <section class="hero" style="background-image: url( '{{ image }}' );
-background-size: cover;
-background-position: bottom;">
+    {{ asset:image }}
+        <section class="hero" style="background-image: url( '{{ url }}' );
+            background-size: cover;
+            background-position: {{ focus_css  }};"
+        >
+    {{ /asset:image }}
 {{ else }}
-    <section class="hero" style="background-image: url( '{{ image:url }}' );
-background-size: cover;
-background-position: bottom;">
+    {{ asset:image }}
+        <section class="hero" style="background-image: url( '{{ url }}' );
+            background-size: cover;
+            background-position: {{ focus_css  }};"
+        >
+    {{ /asset:image }}
 {{ /if }}
     <div class="hero__container {{ image ? "text-brand-white" : "text-brand-black" }} ">
         <div class="hero__inner">

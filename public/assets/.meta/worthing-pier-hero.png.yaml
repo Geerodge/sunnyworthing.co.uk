@@ -1,6 +1,9 @@
-data: {  }
+data:
+  alt: 'Worthing beach and pier'
+  focus: 22-79-1
 size: 1450623
-last_modified: 1644235899
+last_modified: 1667396689
 width: 1728
 height: 997
 mime_type: image/png
+duration: null

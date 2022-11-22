@@ -9,12 +9,21 @@
         {{ partial:components/ImageAsideMulti/image-aside-multi image=image background=background image_side=image_side list=list }}
     {{ /if }}
     {{ if type === "cards" }}
-        {{ partial:components/Cards/cards }}
+        {{ partial:components/Cards/cards center_align=center_align }}
     {{ /if }}
     {{ if type === "bard" }}
-        {{ partial:components/Bard/bard background=background }}
+        {{ partial:components/Bard/bard background=background image=image }}
+    {{ /if }}
+    {{ if type === "bard_with_map" }}
+        {{ partial:components/BardMap/bardmap background=background image=image }}
     {{ /if }}
     {{ if type === "accordion" }}
         {{ partial:components/Accordion/accordion }}
+    {{ /if }}
+    {{ if type === "youtube_video" }}
+        {{ partial:components/YouTube/youtube }}
+    {{ /if }}
+    {{ if type === "google_map" }}
+        {{ partial:components/GoogleMap/googlemap }}
     {{ /if }}
 {{ /block_builder }}

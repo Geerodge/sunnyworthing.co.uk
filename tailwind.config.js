@@ -958,6 +958,9 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require("tailwind-css-variables")(
@@ -968,5 +971,7 @@ module.exports = {
         // options
       }
     ),
+    
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

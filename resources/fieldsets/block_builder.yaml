@@ -35,6 +35,33 @@ fields:
           fields:
             -
               import: image_aside_multi
+        youtube_video:
+          display: 'YouTube Video'
+          fields:
+            -
+              import: youtube_video
+        google_map:
+          display: 'Google Map'
+          fields:
+            -
+              handle: google_map_field
+              field:
+                initial_type: roadmap
+                initial_zoom: '16'
+                maptypes: true
+                markers: true
+                geocoder: false
+                showControls: false
+                display: 'Google Map Field'
+                type: google_map
+                icon: earth
+                listable: hidden
+                instructions_position: above
+        bard_with_map:
+          display: 'Bard with Map'
+          fields:
+            -
+              import: bard_with_map
       display: 'Block Builder'
       type: replicator
       icon: replicator

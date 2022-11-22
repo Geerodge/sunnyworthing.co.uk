@@ -4,19 +4,19 @@
             <div class="card">
                 <div class="card__image">
                     <img src="{{ glide:image width="366" height="361" }}" loading="lazy"
-                        alt="{{ title }}" />
+                        alt="{{ title }}"
+                        class="{{ center_align:value === "yes" ? 'm-auto' : 'm-auto w-full h-full' }}" />
                 </div>
                 <div class="card__content">
-                    <div class="heading-4 text-brand-black font-sans mt-4">
+                    <div class="heading-4 text-brand-black font-sans mt-4 {{ center_align:value === 'yes' ? 'text-center' : '' }}">
                         {{ title }}
                     </div>
-                    <p class="p p-small my-4">
+                    <p class="p p-small my-4 {{ center_align:value === 'yes' ? 'text-center' : '' }}">
                         {{ textarea }}
                     </p>
                 </div>
-                <div class="card__button">
-                    <a class="button" href="{{ button_url }}"
-                        class="btn small {{ button_color }}">
+                <div class="card__button {{ center_align:value === 'yes' ? 'text-center' : '' }}">
+                    <a class="button {{ button_color:value }}" href="{{ button_url }}">
                         {{ button_text }}
                     </a>
                 </div>

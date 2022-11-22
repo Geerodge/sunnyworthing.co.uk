@@ -7,16 +7,24 @@
 }
 
 .card {
-    @apply mx-auto w-80%;
+    @apply mx-auto w-80% mb-10;
 
     & .card__image {
         @apply mx-auto;
 
-        & img {
+        /* & img {
             @apply m-auto w-full h-full;
-        }
+        } */
     }
 }
+
+/* .card__button {
+    @apply text-center;
+}
+
+.card__content {
+    @apply text-center;
+} */
 
 @screen sm {
     .card {
@@ -29,9 +37,9 @@
         @apply mx-0 w-30%;
     }
 
-    .card:nth-child(2n) {
+    /* .card:nth-child(2n) {
         margin: 2rem 5%;
-    }
+    } */
 }
 
 @screen xl {

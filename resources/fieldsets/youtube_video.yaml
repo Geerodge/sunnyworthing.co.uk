@@ -1,0 +1,10 @@
+title: 'YouTube Video'
+fields:
+  -
+    handle: youtube_url
+    field:
+      display: 'YouTube URL'
+      type: video
+      icon: video
+      listable: hidden
+      instructions_position: above

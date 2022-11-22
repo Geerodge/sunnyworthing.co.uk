@@ -1,4 +1,4 @@
-title: Bard
+title: 'Bard with Map'
 fields:
   -
     handle: background
@@ -22,20 +22,23 @@ fields:
     field:
       always_show_set_button: false
       buttons:
-        - h1
         - h2
         - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
         - 'Introduction Paragraph'
         - Paragraph
         - 'Small Paragraph'
         - 'Quote Paragraph'
-        - bold
-        - italic
         - underline
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - anchor
+        - strikethrough
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -46,24 +49,25 @@ fields:
       allow_source: true
       enable_input_rules: true
       enable_paste_rules: true
+      antlers: false
       display: Bard
       type: bard
       icon: bard
       listable: hidden
       instructions_position: above
-      antlers: false
   -
     import: buttons
   -
-    handle: image
+    handle: google_map_field
     field:
-      mode: list
-      restrict: false
-      allow_uploads: true
-      show_filename: true
-      max_files: 3
-      display: Image
-      type: assets
-      icon: assets
+      initial_type: roadmap
+      initial_zoom: '16'
+      maptypes: true
+      markers: true
+      geocoder: false
+      showControls: false
+      display: 'Google Map Field'
+      type: google_map
+      icon: earth
       listable: hidden
       instructions_position: above

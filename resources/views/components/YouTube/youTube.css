@@ -1,0 +1,11 @@
+.youtube {
+  @apply mx-auto bg-white max-w-screen-max;
+}
+
+.youtube_container {
+  @apply justify-between max-w-8xl mx-auto;
+}
+
+.youtube_container__aspect {
+  @apply aspect-w-16 aspect-h-9;
+}

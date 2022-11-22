@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1645018263
+updated_at: 1668708585
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -109,37 +109,44 @@ block_builder:
       - worthing-pier.jpg
       - worthing-splash-point.jpg
   -
+    youtube_url: 'https://www.youtube.com/watch?v=wSUJzmTpmUE'
+    type: youtube_video
+    enabled: true
+  -
     cards:
       -
-        title: 'Maecenas sed diam'
+        title: 'Things to Do in Worthing'
         price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
+        textarea: 'With tons of outdoor space, a wicked art scene and a rich history – what’s not to love about Worthing!'
+        button_text: 'Read more'
         button_url: /
-        button_color: btn--primary
+        button_color: button--primary
         type: new_set
         enabled: true
-        image: placeholder.jpg
+        image: worthing-splash-point.jpg
+        center_align: 'No'
       -
-        button_color: btn--primary
+        button_color: button--primary
         type: new_set
         enabled: true
-        title: 'Maecenas sed'
+        title: 'Food and Drink'
         price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
+        textarea: 'Explore Worthing’s restaurants serving award winning food. We have lots of cafés, bars, and pubs too…'
+        button_text: 'Read more'
         button_url: /
-        image: placeholder.jpg
+        image: food-and-drink.jpg
+        center_align: 'No'
       -
-        title: 'Maecenas sed diam'
+        title: 'Explore Sussex'
         price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
+        textarea: 'Escape the city and explore the beauty of the Sussex countryside, coastline and surrounding areas…'
+        button_text: 'Read more'
         button_url: /
-        button_color: btn--primary
+        button_color: button--primary
         type: new_set
         enabled: true
-        image: placeholder.jpg
+        image: south-downs.jpg
+        center_align: 'No'
     type: cards
     enabled: true
 ---

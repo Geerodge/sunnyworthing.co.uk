@@ -1,6 +1,24 @@
 title: Card
 fields:
   -
+    handle: center_align
+    field:
+      options:
+        'yes': 'Yes'
+        'no': 'No'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Center Align'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      width: 50
+  -
     handle: image
     field:
       mode: list
@@ -13,6 +31,7 @@ fields:
       icon: assets
       listable: hidden
       instructions_position: above
+      width: 50
   -
     handle: title
     field:
