@@ -65,10 +65,6 @@
     @apply max-w-4xl;
   }
 
-  .bardmap ul {
-    @apply list-none;
-  }
-
   .bardmap__image {
     @apply w-1/2;
   }

@@ -86,11 +86,12 @@ block_builder:
         button_color: button--secondary
         type: button
         enabled: true
+        button_center: 'yes'
     image:
       - history/high_salvington_post_mill/high-salvington-mill-behind.jpg
       - history/high_salvington_post_mill/high-salvington-mill-front.jpg
       - history/high_salvington_post_mill/high-salvington-mill-gears.jpg
 parent: 536a0713-3bd2-4656-9880-774127c8ce82
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669121870
+updated_at: 1669408675
 ---

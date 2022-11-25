@@ -18,6 +18,44 @@ fields:
       listable: hidden
       instructions_position: above
   -
+    handle: center_all
+    field:
+      options:
+        'yes': 'Yes'
+        'no': 'No'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Center
+      type: select
+      icon: select
+      width: 50
+      listable: hidden
+      instructions_position: above
+      instructions: 'Center text on all screen sizes?'
+  -
+    handle: center_xxl
+    field:
+      options:
+        'yes': 'Yes'
+        'no': 'No'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Center XXL'
+      type: select
+      icon: select
+      instructions: 'Center text on XXL screens only?'
+      width: 50
+      listable: hidden
+      instructions_position: above
+  -
     handle: bard
     field:
       always_show_set_button: false

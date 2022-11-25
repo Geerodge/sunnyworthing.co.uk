@@ -4,7 +4,7 @@ blueprint: pages
 title: 'The Bonfire Boys'
 parent: 536a0713-3bd2-4656-9880-774127c8ce82
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669127661
+updated_at: 1669409162
 block_builder:
   -
     background: bg-brand-primary
@@ -27,6 +27,8 @@ block_builder:
             text: 'Throughout much of the 19th century disturbances frequently occurred on Guy Fawkes Night in Worthing causing alarm and posing great problems for the local authorities.'
     type: bard
     enabled: true
+    center_xxl: 'yes'
+    center_all: 'yes'
   -
     image_side: right
     background: White
