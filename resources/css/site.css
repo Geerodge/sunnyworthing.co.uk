@@ -8,3 +8,4 @@
 @import "./defaults/*.css";
 @import "../views/components/**/*.css";
 @import "./views/*.css";
+@import "./typography.css";
