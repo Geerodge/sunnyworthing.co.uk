@@ -11,8 +11,8 @@
     "require": {
         "php": "^7.3 || ^8.0",
         "aryehraber/statamic-impersonator": "2.4.1",
-        "doublethreedigital/duplicator": "^2.0",
-        "edalzell/blade-directives": "3.5.2",
+        "doublethreedigital/duplicator": "2.3.4",
+        "edalzell/blade-directives": "3.7",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -21,7 +21,8 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "nineteensquared/instagram": "^1.1",
-        "statamic/cms": "3.2.33"
+        "statamic/cms": "3.3.60",
+        "statamic/ssg": "^1.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
@@ -72,6 +73,12 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "build": [
+            "npm run production",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate",
+            "@php please ssg:generate"
         ]
     }
 }
