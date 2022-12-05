@@ -28,7 +28,7 @@
 
 .image-aside-multi__list {
     @apply ml-12;
-    list-style-image: url('../../../../public/assets/icons/check-icon.svg');
+    list-style-image: url('/assets/icons/check-icon.svg');
 }
 
 .image-aside-multi__images-wrapper {
