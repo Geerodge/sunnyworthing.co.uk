@@ -14,4 +14,4 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 .parcel-cache
-composerCopy.lock
+composer.lock
