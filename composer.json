@@ -9,7 +9,7 @@
     ],
     "type": "project",
     "require": {
-        "php": "^8.1.4",
+        "php": "^7.3 || ^8.0",
         "aryehraber/statamic-impersonator": "2.4.1",
         "doublethreedigital/duplicator": "2.3.4",
         "edalzell/blade-directives": "3.7",
@@ -35,9 +35,6 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "platform": {
-            "php": "8.1.4"
-        },
         "sort-packages": true,
         "allow-plugins": {
             "pixelfear/composer-dist-plugin": true
