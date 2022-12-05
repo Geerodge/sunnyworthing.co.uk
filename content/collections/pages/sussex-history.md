@@ -3,7 +3,7 @@ id: 536a0713-3bd2-4656-9880-774127c8ce82
 blueprint: pages
 title: 'Sussex History'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669130168
+updated_at: 1669814315
 block_builder:
   -
     image: history/south-downs-poppies.jpg
@@ -17,7 +17,12 @@ block_builder:
     image_side: right
     background: bg-brand-white
     title: 'History of Worthing'
-    textarea: 'Worthing started life as a humble fishing hamlet until Princess Amelia, youngest daughter of George III, visited it in 1798. There are many historical places across Worthing, here we have curated a lot of that historical information.'
+    textarea: |-
+      Worthing is a seaside town in West Sussex, England, at the foot of the South Downs, west of Brighton, and east of Chichester.
+
+      Starting life as a humble fishing hamlet until Princess Amelia, youngest daughter of George III, visited it in 1798. Writers Oscar Wilde and Harold Pinter lived and worked in the town. 
+
+      The area around Worthing has been populated for at least 6,000 years and contains Britain's greatest concentration of Stone Age flint mines, which are some of the earliest mines in Europe. The Iron Age hill fort of Cissbury Ring is one of Britain's largest.
     image:
       - history/worthing-wheel.jpg
       - history/worthing-pier-aerial.jpg
@@ -26,6 +31,39 @@ block_builder:
       - history/cissbury-ring.jpg
     type: image_aside_multi
     enabled: true
+    bard:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Worthing is a seaside town in West Sussex, England, at the foot of the South Downs, west of Brighton, and east of Chichester.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Starting life as a humble fishing hamlet until Princess Amelia, youngest daughter of George III, visited it in 1798. Writers Oscar Wilde and Harold Pinter lived and worked in the town. '
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'The area around Worthing has been populated for at least 6,000 years and contains Britain''s greatest concentration of Stone Age flint mines, which are some of the earliest mines in Europe. The Iron Age hill fort of Cissbury Ring is one of Britain''s largest.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Since 2010, northern parts of the borough have formed part of the South Downs National Park. In 2019 Worthing Pier was named the best in Britain.'
   -
     cards:
       -

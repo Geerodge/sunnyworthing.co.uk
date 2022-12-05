@@ -3,7 +3,7 @@ id: adf905b9-8c43-4159-a6a0-3f03c9227a57
 blueprint: pages
 title: 'Things to Do'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669135542
+updated_at: 1669813247
 block_builder:
   -
     background: bg-brand-primary
@@ -230,20 +230,29 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
+        image: pier-worthing.jpg
+        textarea: 'Worthing Pier is a public pleasure pier in Worthing, West Sussex, England. Designed by Sir Robert Rawlinson, it was opened on 12 April 1862 and remains open to the public.'
+        button_url: 'https://www.worthingpier.org.uk/'
       -
         center_align: 'no'
-        title: 'The Dome Cinema'
+        title: 'Highdown Hill'
         button_text: 'Visit Website'
         button_color: button--primary
         type: new_set
         enabled: true
+        image: highdown-hill.jpg
+        textarea: 'Highdown Hill is a prominent hill in the South Downs reaching a height of 81 metres (266 ft). It has been managed in a sensitive way for many years, making it an imporant site of wildlife and chalk grassland flower.'
+        button_url: 'https://highdowngardens.co.uk/explore-highdown/highdown-hill/'
       -
         center_align: 'no'
-        title: 'Castle Goring'
+        title: 'Arundel Castle'
         button_text: 'Visit Website'
         button_color: button--primary
         type: new_set
         enabled: true
+        image: arundel-castle.jpg
+        textarea: 'Arundel Castle is a restored and remodelled medieval castle in Arundel. It was established during the reign of Edward the Confessor and completed by Roger de Montgomery.'
+        button_url: 'https://www.arundelcastle.org/'
     type: cards
     enabled: true
 ---

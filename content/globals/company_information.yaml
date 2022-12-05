@@ -2,11 +2,5 @@ title: 'Company Information'
 data:
   logo:
     - logo.svg
-  name: 'Statamic Template'
-  email: example@email.com
-  phone_number: '0151 151 151'
-  address_line_1: 'Address Line 1'
-  address_line_2: 'Address Line 2'
-  city: City
-  county: County
-  post_code: 'Post Code'
+  name: 'Sunny Worthing'
+  email: george@sunnyworthing.co.uk

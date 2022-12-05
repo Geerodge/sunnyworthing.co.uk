@@ -33,6 +33,8 @@ module.exports = {
         blueLight: "#00A1E8",
         yellow: "#F7B100",
         orange: "#F47F00",
+        socialp: "#00A1E8",
+        socials: "#1B3D6A",
         //////-----------
         primary: "#1B3D6A",
         secondary: "#016699",

@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669129831
+updated_at: 1669818555
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -83,7 +83,7 @@ block_builder:
       - splash-point.jpg
       - worthing-pier.jpg
       - worthing-splash-point.jpg
-    button_text: 'Read more'
+    button_text: 'Things To Do'
     button_color: button--primary
     type: image_aside_multi
     enabled: true
@@ -91,11 +91,19 @@ block_builder:
       -
         type: paragraph
         attrs:
-          class: 'p p-base font-sans'
+          class: null
         content:
           -
             type: text
-            text: test
+            text: 'With amazing food, tons of outdoor space, a wicked art scene and rich history – what’s not to love about Worthing!'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Find out more about the things you can do in and around Worthing.'
     textarea: 'There’s plenty of attractions and things to do in Worthing and the surrounding areas.'
     list:
       - 'Fun activities and games'
@@ -108,6 +116,7 @@ block_builder:
       - south-downs.jpg
       - worthing-pier.jpg
       - worthing-splash-point.jpg
+    button_url: 'entry::adf905b9-8c43-4159-a6a0-3f03c9227a57'
   -
     youtube_url: 'https://www.youtube.com/watch?v=wSUJzmTpmUE'
     type: youtube_video
@@ -118,9 +127,9 @@ block_builder:
       -
         title: 'Things to Do in Worthing'
         price: £19.99
-        textarea: 'With tons of outdoor space, a wicked art scene and a rich history – what’s not to love about Worthing!'
+        textarea: 'With tons of outdoor space, a wicked art scene and rich history – what’s not to love about Worthing!'
         button_text: 'Read more'
-        button_url: /
+        button_url: 'entry::adf905b9-8c43-4159-a6a0-3f03c9227a57'
         button_color: button--primary
         type: new_set
         enabled: true
@@ -134,7 +143,7 @@ block_builder:
         price: £19.99
         textarea: 'Explore Worthing’s restaurants serving award winning food. We have lots of cafés, bars, and pubs too…'
         button_text: 'Read more'
-        button_url: /
+        button_url: 'entry::a6ddc575-8a46-4083-82c9-a5a2b06a3223'
         image: food-and-drink.jpg
         center_align: 'No'
       -
@@ -142,7 +151,7 @@ block_builder:
         price: £19.99
         textarea: 'Escape the city and explore the beauty of the Sussex countryside, coastline and surrounding areas…'
         button_text: 'Read more'
-        button_url: /
+        button_url: 'entry::536a0713-3bd2-4656-9880-774127c8ce82'
         button_color: button--primary
         type: new_set
         enabled: true

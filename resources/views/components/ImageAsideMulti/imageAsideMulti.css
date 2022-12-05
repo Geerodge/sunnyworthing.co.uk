@@ -6,12 +6,16 @@
     @apply flex flex-col justify-center items-center;
 
     & p {
-        @apply text-center;
+        @apply text-center ;
     }
 
     & .button {
         max-width: 250px;
     }
+}
+
+.image-aside-multi__bard p {
+    @apply mt-6 mb-6;
 }
 
 .image-aside-multi__carousel {

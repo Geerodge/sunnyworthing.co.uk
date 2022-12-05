@@ -3,7 +3,16 @@ footer {
 }
 
 .footer__container {
-    @apply max-w-8xl mx-auto w-full flex flex-col justify-between items-center;
+    @apply max-w-8xl mx-auto w-full flex flex-col flex-wrap justify-between items-center;
+}
+
+.footer__links,
+.social-links {
+    @apply w-50%;
+}
+
+.social-links ul {
+    @apply mx-auto;
 }
 
 .footer__links ul {
@@ -16,6 +25,18 @@ footer {
 
 .footer__links span {
     @apply hidden;
+}
+
+.footer__text {
+    @apply w-full mt-5;
+}
+
+.footer__text p {
+    @apply text-center;
+}
+
+.footer__text p a {
+    @apply text-brand-blueLight;
 }
 
 @screen lg {
@@ -33,5 +54,17 @@ footer {
 
     .footer__links span {
         @apply block;
+    }
+
+    .footer__text {
+        @apply flex flex-row;
+    }
+
+    .footer__text p:last-child {
+        @apply ml-1;
+    }
+
+    .footer__text p {
+        @apply text-left;
     }
 }

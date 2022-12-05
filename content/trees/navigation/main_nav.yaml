@@ -9,9 +9,8 @@ tree:
     id: 1cceac05-c96c-4bd9-bd47-49a436211dd6
     entry: 536a0713-3bd2-4656-9880-774127c8ce82
   -
-    id: 6be1ac23-62b6-45e5-afc9-ccfcc68820d4
+    id: a77f0cbd-0444-47a2-862b-9dd9fa12a565
     title: Explore
-    url: Explore
     children:
       -
         id: f12f77a1-3653-4788-9561-48ed5d0e07a3
