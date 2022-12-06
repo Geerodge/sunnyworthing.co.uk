@@ -6,16 +6,16 @@ a minimum value, a preferred value, and a maximum allowed value.
 
 /* hind-regular - latin */
 @font-face {
-	font-family: "Hind";
+	font-family: 'Hind';
 	font-style: normal;
 	font-weight: 400;
-	src: url("../fonts/hind-v15-latin-regular.eot"); /* IE9 Compat Modes */
-	src: local(""),
-		url("../fonts/hind-v15-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		url("../fonts/hind-v15-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../fonts/hind-v15-latin-regular.woff") format("woff"), /* Modern Browsers */
-		url("../fonts/hind-v15-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-		url("../fonts/hind-v15-latin-regular.svg#Hind") format("svg"); /* Legacy iOS */
+	src: url('../fonts/hind-v15-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/hind-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/hind-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/hind-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/hind-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/hind-v15-latin-regular.svg#Hind') format('svg'); /* Legacy iOS */
 }
 
 /* poppins-regular - latin */
@@ -59,26 +59,26 @@ a minimum value, a preferred value, and a maximum allowed value.
 }
 
 @font-face {
-	font-family: "Brother";
-	src: url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-					format("woff2"),
-			url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-					format("woff"),
-			url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-					format("opentype");
+	font-family: 'Brother';
+	src: url('https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+					format('woff2'),
+			url('https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+					format('woff'),
+			url('https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+					format('opentype');
 	font-display: auto;
 	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face {
-	font-family: "Brother";
-	src: url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-					format("woff2"),
-			url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-					format("woff"),
-			url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-					format("opentype");
+	font-family: 'Brother';
+	src: url('https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+					format('woff2'),
+			url('https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+					format('woff'),
+			url('https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+					format('opentype');
 	font-display: auto;
 	font-style: normal;
 	font-weight: 700;
