@@ -41,7 +41,7 @@ return [
     'copy' => [
         public_path('css') => 'css',
         public_path('js') => 'js',
-        public_path('assets') => 'public/assets',
+        public_path('assets') => 'assets',
         public_path('fonts') => 'fonts',
         public_path('robots.txt') => 'robots.txt',
         public_path('favicon.ico') => 'favicon.ico',
