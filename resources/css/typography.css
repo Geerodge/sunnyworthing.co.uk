@@ -1,135 +1,135 @@
 /*
-clamp() enables selecting value within a range of values between 
-a defined minimum and maximum. It takes three parameters: 
-a minimum value, a preferred value, and a maximum allowed value. 
+clamp() enables selecting value within a range of values between
+a defined minimum and maximum. It takes three parameters:
+a minimum value, a preferred value, and a maximum allowed value.
 */
 
 /* hind-regular - latin */
 @font-face {
-    font-family: "Hind";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/hind-v15-latin-regular.eot"); /* IE9 Compat Modes */
-    src: local(""),
-         url("../fonts/hind-v15-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-         url("../fonts/hind-v15-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
-         url("../fonts/hind-v15-latin-regular.woff") format("woff"), /* Modern Browsers */
-         url("../fonts/hind-v15-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-         url("../fonts/hind-v15-latin-regular.svg#Hind") format("svg"); /* Legacy iOS */
+	font-family: "Hind";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/hind-v15-latin-regular.eot"); /* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/hind-v15-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/hind-v15-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
+		url("../fonts/hind-v15-latin-regular.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/hind-v15-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/hind-v15-latin-regular.svg#Hind") format("svg"); /* Legacy iOS */
 }
 
 /* poppins-regular - latin */
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v19-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-            url('../fonts/poppins-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('../fonts/poppins-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-            url('../fonts/poppins-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
-            url('../fonts/poppins-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('../fonts/poppins-v19-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/poppins-v19-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/poppins-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v19-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 /* poppins-700 - latin */
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v19-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-            url('../fonts/poppins-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('../fonts/poppins-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-            url('../fonts/poppins-v19-latin-700.woff') format('woff'), /* Modern Browsers */
-            url('../fonts/poppins-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('../fonts/poppins-v19-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/poppins-v19-latin-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/poppins-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v19-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 /* poppins-800 - latin */
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/poppins-v19-latin-800.eot'); /* IE9 Compat Modes */
-    src: local(''),
-            url('../fonts/poppins-v19-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('../fonts/poppins-v19-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-            url('../fonts/poppins-v19-latin-800.woff') format('woff'), /* Modern Browsers */
-            url('../fonts/poppins-v19-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-            url('../fonts/poppins-v19-latin-800.svg#Poppins') format('svg'); /* Legacy iOS */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/poppins-v19-latin-800.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/poppins-v19-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/poppins-v19-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poppins-v19-latin-800.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/poppins-v19-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poppins-v19-latin-800.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: "Brother";
-    src: url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: normal;
-    font-weight: 400;
+	font-family: "Brother";
+	src: url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+					format("woff2"),
+			url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+					format("woff"),
+			url("https://use.typekit.net/af/69907d/00000000000000003b9b32e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+					format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
 }
 
 @font-face {
-    font-family: "Brother";
-    src: url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: normal;
-    font-weight: 700;
+	font-family: "Brother";
+	src: url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+					format("woff2"),
+			url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+					format("woff"),
+			url("https://use.typekit.net/af/5d27c7/00000000000000003b9b32e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+					format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
 }
 
 .heading-1 {
-    @apply font-sans;
-    font-size: clamp(2rem, 5vw, 4rem);
-    line-height: 1.125;
+	@apply font-sans;
+	font-size: clamp(2rem, 5vw, 4rem);
+	line-height: 1.125;
 }
 
 .heading-2 {
-    @apply font-sans;
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    line-height: 1.4;
+	@apply font-sans;
+	font-size: clamp(1.75rem, 4vw, 2.5rem);
+	line-height: 1.4;
 }
 
 .heading-3 {
-    @apply font-sans;
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    line-height: 2;
+	@apply font-sans;
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	line-height: 2;
 }
 
 .heading-4 {
-    @apply font-sans;
-    font-size: clamp(1.25rem, 4vw, 1.5rem);
-    line-height: 1.35;
+	@apply font-sans;
+	font-size: clamp(1.25rem, 4vw, 1.5rem);
+	line-height: 1.35;
 }
 
 .heading-5 {
-    @apply font-sans;
-    font-size: 0.875rem;
-    letter-spacing: 0.2em;
+	@apply font-sans;
+	font-size: 0.875rem;
+	letter-spacing: 0.2em;
 }
 
 .heading-6 {
-    @apply font-sans;
-    font-size: 0.875rem;
-    letter-spacing: 0.2em;
+	@apply font-sans;
+	font-size: 0.875rem;
+	letter-spacing: 0.2em;
 }
 
 .p {
-    @apply font-sans;
-    letter-spacing: 0.04em;
-    line-height: 2;
+	@apply font-sans;
+	letter-spacing: 0.04em;
+	line-height: 2;
 }
 
 .p-base {
-    font-size: clamp(1rem, 3vw, 1.125rem);
+	font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
 .p-small {
-    font-size: clamp(0.875rem, 3vw, 1rem);
+	font-size: clamp(0.875rem, 3vw, 1rem);
 }

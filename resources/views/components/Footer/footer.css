@@ -6,8 +6,7 @@ footer {
     @apply max-w-8xl mx-auto w-full flex flex-col flex-wrap justify-between items-center;
 }
 
-.footer__links,
-.social-links {
+.footer__links {
     @apply w-50%;
 }
 
