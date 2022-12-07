@@ -1,62 +1,30 @@
-/*
-clamp() enables selecting value within a range of values between
-a defined minimum and maximum. It takes three parameters:
-a minimum value, a preferred value, and a maximum allowed value.
-*/
-
 /* hind-regular - latin */
 @font-face {
-	font-family: 'Hind';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/hind-v15-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../fonts/hind-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/hind-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/hind-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/hind-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/hind-v15-latin-regular.svg#Hind') format('svg'); /* Legacy iOS */
-}
+	font-family:"hind";
+	src:url("https://use.typekit.net/af/9d791d/00000000000000007735b911/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9d791d/00000000000000007735b911/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9d791d/00000000000000007735b911/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+	}
 
 /* poppins-regular - latin */
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/poppins-v19-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../fonts/poppins-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/poppins-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/poppins-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/poppins-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/poppins-v19-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-}
+	font-family:"poppins";
+	src:url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+	}
+
 /* poppins-700 - latin */
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/poppins-v19-latin-700.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../fonts/poppins-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/poppins-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/poppins-v19-latin-700.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/poppins-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/poppins-v19-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
-}
+	font-family:"poppins";
+	src:url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+	}
+	
 /* poppins-800 - latin */
 @font-face {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 800;
-	src: url('../fonts/poppins-v19-latin-800.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../fonts/poppins-v19-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/poppins-v19-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/poppins-v19-latin-800.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/poppins-v19-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/poppins-v19-latin-800.svg#Poppins') format('svg'); /* Legacy iOS */
-}
+	font-family:"poppins";
+	src:url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f2b266/00000000000000007735fdb4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+	}
 
 @font-face {
 	font-family: 'Brother';
