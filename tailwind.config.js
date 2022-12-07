@@ -201,7 +201,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "Hind",
+        "hind",
         "Brother",
         "system-ui",
         "-apple-system",
@@ -218,7 +218,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
-        "Poppins",
+        "poppins",
         "Hepta Slab",
         "Georgia",
         "Cambria",
