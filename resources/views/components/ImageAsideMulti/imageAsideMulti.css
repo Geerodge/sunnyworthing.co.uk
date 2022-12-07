@@ -39,7 +39,7 @@
 
     & li:before {
         content: '';
-        background: url('../../../../public/assets/icons/check-icon.svg');
+        background: url('../../../img/check-icon.svg');
         display: block;
         width: 42px;
         height: 37px;

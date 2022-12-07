@@ -17,7 +17,7 @@ block_builder:
     hero_form_field: hero_subscription
   -
     image_side: right
-    background: bg-brand-white
+    background: bg-white
     subtitle: 'Fun activites'
     title: 'Things To Do In Worthing'
     content:

@@ -15,7 +15,7 @@ block_builder:
     enabled: true
   -
     image_side: right
-    background: bg-brand-white
+    background: bg-white
     title: 'History of Worthing'
     textarea: |-
       Worthing is a seaside town in West Sussex, England, at the foot of the South Downs, west of Brighton, and east of Chichester.

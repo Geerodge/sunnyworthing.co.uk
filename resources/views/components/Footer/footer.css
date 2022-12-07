@@ -7,7 +7,7 @@ footer {
 }
 
 .footer__links {
-    @apply w-50%;
+    @apply w-50;
 }
 
 .social-links ul {

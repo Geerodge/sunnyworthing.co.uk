@@ -7,7 +7,7 @@
 }
 
 .card {
-    @apply mx-auto w-80% mb-10;
+    @apply mx-auto w-80 mb-10;
 
     & .card__image {
         @apply mx-auto;
@@ -28,13 +28,13 @@
 
 @screen sm {
     .card {
-        @apply w-40%;
+        @apply w-40;
     }
 }
 
 @screen lg {
     .card {
-        @apply mx-0 w-30%;
+        @apply mx-0 w-30;
     }
 
     /* .card:nth-child(2n) {

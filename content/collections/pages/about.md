@@ -58,7 +58,7 @@ block_builder:
       zoom: 13
       type: roadmap
   -
-    background: bg-brand-white
+    background: bg-white
     bard:
       -
         type: heading
@@ -147,7 +147,7 @@ block_builder:
     type: bard_with_map
     enabled: true
   -
-    background: bg-brand-white
+    background: bg-white
     bard:
       -
         type: heading
