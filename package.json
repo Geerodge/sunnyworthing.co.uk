@@ -15,8 +15,8 @@
     "build-dev": "NODE_ENV=development npm run build",
     "prebuild": "npx browserslist@latest --update-db",
     "prewatch": "npx browserslist@latest --update-db",
-    "build": "parcel build ./resources/js/site.js ./resources/css/site.css --no-cache --public-url /",
-    "watch": "parcel watch ./resources/js/site.js ./resources/css/site.css --no-cache --public-url /",
+    "build": "parcel build ./resources/js/site.js ./resources/css/site.css --no-cache --public-url ../ --out-dir ../dist/",
+    "watch": "parcel watch ./resources/js/site.js ./resources/css/site.css --no-cache --public-url ../ --out-dir ../dist/",
     "format": "prettier --loglevel warn --write \"resources/**/*.{js,css,md}\"",
     "serve": "php artisan serve",
     "dev": "concurrently npm:watch npm:serve"
