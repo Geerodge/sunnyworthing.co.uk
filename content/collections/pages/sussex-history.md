@@ -3,7 +3,7 @@ id: 536a0713-3bd2-4656-9880-774127c8ce82
 blueprint: pages
 title: 'Sussex History'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669814315
+updated_at: 1670435751
 block_builder:
   -
     image: history/south-downs-poppies.jpg
@@ -15,7 +15,7 @@ block_builder:
     enabled: true
   -
     image_side: right
-    background: bg-white
+    background: bg-brand-white
     title: 'History of Worthing'
     textarea: |-
       Worthing is a seaside town in West Sussex, England, at the foot of the South Downs, west of Brighton, and east of Chichester.
@@ -55,7 +55,7 @@ block_builder:
         content:
           -
             type: text
-            text: 'The area around Worthing has been populated for at least 6,000 years and contains Britain''s greatest concentration of Stone Age flint mines, which are some of the earliest mines in Europe. The Iron Age hill fort of Cissbury Ring is one of Britain''s largest.'
+            text: "The area around Worthing has been populated for at least 6,000 years and contains Britain's greatest concentration of Stone Age flint mines, which are some of the earliest mines in Europe. The Iron Age hill fort of Cissbury Ring is one of Britain's largest."
       -
         type: paragraph
         attrs:

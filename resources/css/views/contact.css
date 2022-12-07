@@ -43,7 +43,7 @@
 
 .contact-left-form {
     & h3 {
-        @apply text-brand-black uppercase mb-10 !important;
+        @apply text-brand-primary uppercase mb-10 !important;
     }
     & .field {
         @apply py-3;

@@ -1,5 +1,5 @@
 .accordion {
-    @apply text-brand-black mx-auto max-w-screen-max;
+    @apply text-brand-primary mx-auto max-w-screen-max;
     display: grid;
     align-content: center;
 }

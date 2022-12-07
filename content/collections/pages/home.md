@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669818555
+updated_at: 1670435569
 block_builder:
   -
     heading: 'The Definitive Guide'
@@ -17,7 +17,7 @@ block_builder:
     hero_form_field: hero_subscription
   -
     image_side: right
-    background: bg-white
+    background: bg-brand-white
     subtitle: 'Fun activites'
     title: 'Things To Do In Worthing'
     content:

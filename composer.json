@@ -45,6 +45,7 @@
             "dont-discover": []
         }
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "App\\": "app/",
