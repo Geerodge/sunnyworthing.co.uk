@@ -21,6 +21,8 @@
     {{ /form:contact_us }}
 </div> #}}
 <script type="application/javascript">
+
+    {{# Handle contact submit #}}
     const handleSubmit = e => {
         const encode = (data) => {
             return Object.keys(data)
@@ -37,12 +39,10 @@
         e.preventDefault();
     };
 
-    const [success, setSuccess] = useState(false);
-    useEffect(() => {
-        if ( window.location.search.includes("success=true") ) {
-            setSuccess(true);
-        }
-    }, []);
+    {{# Success message #}}
+    if ( window.location.search.includes("success=true") ) {
+        alert("Thank you for your message! 🥳 We'll be in touch in soon");
+    };
 </script>
 <div class="contact-form">
     <form
