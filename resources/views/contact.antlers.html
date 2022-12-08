@@ -2,18 +2,20 @@
 <section class="contact ">
     <div class="contact-container">
         <div class="contact-header">
-            <div class="py-8 text-center lg:py-16">
-                <h3 class="heading-4 font-sans text-brand-primary pb-6">
-                    {{ company_information:email }}
-                </h3>
-                <h3 class="heading-4 font-sans text-brand-primary">
-                    {{ company_information:phone_number }}
-                </h3>
+            <div class="py-8 text-center">
+                <h2 class="heading-4 font-sans text-brand-primary">
+                    {{ form_title }}
+                </h2>
+            </div>
+            <div class="pb-4 text-center">
+                <p class="text-brand-primary">
+                    {{ intro }}
+                </p>
             </div>
         </div>
         {{ partial:components/Form/form }}
         <div class="pt-8">
-            <p class="caption">
+            <p class="caption text-brand-primary">
                 {{ small_print }}
             </p>
         </div>

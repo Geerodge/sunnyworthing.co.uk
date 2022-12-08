@@ -3,7 +3,7 @@ id: 1fe0d5a8-09cc-4bb9-a709-e841e961d4ef
 blueprint: pages
 title: 'Privacy Policy'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669403619
+updated_at: 1670500312
 block_builder:
   -
     background: bg-white
@@ -26,8 +26,6 @@ block_builder:
             text: 'Who We Are'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -61,16 +59,12 @@ block_builder:
             text: Comments
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -99,8 +93,6 @@ block_builder:
             text: Media
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -115,32 +107,24 @@ block_builder:
             text: Cookies
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'If you leave a comment on our site you may opt in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select "Remember Me", your login will persist for two weeks. If you log out of your account, the login cookies will be removed.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -155,16 +139,12 @@ block_builder:
             text: 'Embedded Content From Other Websites'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -179,8 +159,6 @@ block_builder:
             text: Analytics
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -206,8 +184,6 @@ block_builder:
             text: 'Who We Share Your Data With'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -220,8 +196,6 @@ block_builder:
             content:
               -
                 type: paragraph
-                attrs:
-                  class: null
                 content:
                   -
                     type: text
@@ -231,8 +205,6 @@ block_builder:
             content:
               -
                 type: paragraph
-                attrs:
-                  class: null
                 content:
                   -
                     type: text
@@ -242,8 +214,6 @@ block_builder:
             content:
               -
                 type: paragraph
-                attrs:
-                  class: null
                 content:
                   -
                     type: text
@@ -253,8 +223,6 @@ block_builder:
             content:
               -
                 type: paragraph
-                attrs:
-                  class: null
                 content:
                   -
                     type: text
@@ -269,16 +237,12 @@ block_builder:
             text: 'How Long We Retain Your Data'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognise and approve any follow-up comments automatically instead of holding them in a moderation queue.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -293,8 +257,6 @@ block_builder:
             text: 'What Rights You Have Over Your Data'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -309,8 +271,6 @@ block_builder:
             text: 'Where We Send Your Data'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -325,12 +285,10 @@ block_builder:
             text: 'Contact Information'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
-            text: 'Please contact George McEntegart if you have any questions via george@sunnyworthing.co.uk.'
+            text: 'Please contact George McEntegart if you have any questions via contact@sunnyworthing.co.uk.'
       -
         type: heading
         attrs:
@@ -349,8 +307,6 @@ block_builder:
             text: 'How We Protect Your Data'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text

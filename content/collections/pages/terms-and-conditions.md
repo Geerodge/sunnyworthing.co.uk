@@ -3,7 +3,7 @@ id: 1d3f949b-2f5d-40f0-a566-281e435390d3
 blueprint: pages
 title: 'Terms & Conditions'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669403558
+updated_at: 1670500329
 block_builder:
   -
     background: bg-white
@@ -27,16 +27,12 @@ block_builder:
             text: 'Use Of Website'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'To register with www.sunnyworthing.co.uk and purchase goods from our website, you must be over eighteen years of age. You must ensure that the details provided by you on registration or at any time are correct and complete. You must inform us immediately of any changes to the information that you provided when registering, by updating your personal details. You must give us your real name, address, phone number, email address and any other details that we may require to process your order.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -51,8 +47,6 @@ block_builder:
             text: Availability
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -67,8 +61,6 @@ block_builder:
             text: 'Pricing, Description And Product Information'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -83,8 +75,6 @@ block_builder:
             text: 'Placing An Order And Order Acceptance'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -99,8 +89,6 @@ block_builder:
             text: Payment
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -115,12 +103,10 @@ block_builder:
             text: 'Cancellations And Returns'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
-            text: 'You have the right to cancel or return your order up to 7 working days following receipt of your goods. This includes your right to cancel your order under the distance selling regulations. You will receive a full refund including the original postage and packaging for the order if the charge was levied with your original order and it is returned in full.This does not affect your statutory rights. Returns outside the timeframe set out above may be accepted at the sole discretion of www.sunnyworthing.co.uk. Please contact George McEntegart by email george@sunnyworthing.co.uk for information about returns.'
+            text: 'You have the right to cancel or return your order up to 7 working days following receipt of your goods. This includes your right to cancel your order under the distance selling regulations. You will receive a full refund including the original postage and packaging for the order if the charge was levied with your original order and it is returned in full.This does not affect your statutory rights. Returns outside the timeframe set out above may be accepted at the sole discretion of www.sunnyworthing.co.uk. Please contact George McEntegart by email contact@sunnyworthing.co.uk for information about returns.'
       -
         type: heading
         attrs:
@@ -131,8 +117,6 @@ block_builder:
             text: 'Refunds And Exchanges'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -147,16 +131,12 @@ block_builder:
             text: 'Promotions And Discounts'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
             text: 'In order for a promotion or offer to be applied to your order, a valid promotion code must be entered into the promotion code box on the basket page. www.sunnyworthing.co.uk cannot be held liable for not discounting the order if a valid code has not been entered. If placing an order by telephone you must quote the promotion code before placing your order. Promotions and promotion codes are subject to the terms and conditions specified by www.sunnyworthing.co.uk at the point of purchase. Only one code can be used per order.'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -171,8 +151,6 @@ block_builder:
             text: 'Website Changes And Update'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -187,8 +165,6 @@ block_builder:
             text: 'Intellectual Property And Copyright'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -203,8 +179,6 @@ block_builder:
             text: Limitations
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -219,8 +193,6 @@ block_builder:
             text: Indemnity
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
@@ -235,8 +207,6 @@ block_builder:
             text: 'Governing Law'
       -
         type: paragraph
-        attrs:
-          class: null
         content:
           -
             type: text
