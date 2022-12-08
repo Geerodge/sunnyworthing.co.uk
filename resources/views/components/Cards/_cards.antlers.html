@@ -19,7 +19,7 @@
                     </p>
                 </div>
                 <div class="card__button {{ center_align:value === 'yes' ? 'text-center' : '' }}">
-                    <a class="button {{ button_color:value }}" href="{{ button_url }}" {{ if button_url | contains:sunnyworthing.co.uk }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>
+                    <a class="button {{ button_color:value }}" href="{{ button_url }}" {{ if button_url | contains:sunnyworthing.co.uk || not_a_url | is_url == false }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>
                         {{ button_text }}
                     </a>
                 </div>
