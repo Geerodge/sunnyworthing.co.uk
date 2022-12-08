@@ -3,7 +3,7 @@ id: adf905b9-8c43-4159-a6a0-3f03c9227a57
 blueprint: pages
 title: 'Things to Do'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669813247
+updated_at: 1670521086
 block_builder:
   -
     background: bg-brand-primary
@@ -40,16 +40,16 @@ block_builder:
         center_align: 'no'
         image: dome-cinema.jpg
         title: 'Dome Cinema'
-        textarea: 'A stunning Edwardian cinema that first opened in April 1911. It''s a grade II listed building that has now been fully restored to its former glory. Now open to the public to watch films.'
+        textarea: "A stunning Edwardian cinema that first opened in April 1911. It's a grade II listed building that has now been fully restored to its former glory. Now open to the public to watch films."
         button_text: 'Visit Website'
-        button_url: 'https://domecinema.co.uk'
+        button_url: 'https://sunnyworthing.co.uk/things-to-do'
         button_color: button--primary
         type: new_set
         enabled: true
       -
         image: mini-golf.jpg
         title: 'Splash Point Mini Golf'
-        textarea: 'Everyone loves a game of mini golf by the seaside, it''s something of a British tradition and now you can enjoy 18 exciting holes on Worthing''s only seafront mini golf course!'
+        textarea: "Everyone loves a game of mini golf by the seaside, it's something of a British tradition and now you can enjoy 18 exciting holes on Worthing's only seafront mini golf course!"
         button_text: 'Visit Website'
         button_url: 'http://www.splashpointminigolf.co.uk/'
         button_color: button--primary
@@ -156,7 +156,7 @@ block_builder:
         center_align: 'no'
         image: cissbury-ring.jpg
         title: 'Cissbury Ring'
-        textarea: 'The most historic hill on the South Downs, it''s the largest hillfort in Sussex and has a history dating back over 5,000 years.'
+        textarea: "The most historic hill on the South Downs, it's the largest hillfort in Sussex and has a history dating back over 5,000 years."
         button_text: 'Visit Website'
         button_url: 'https://www.nationaltrust.org.uk/visit/sussex/cissbury-ring'
         button_color: button--primary

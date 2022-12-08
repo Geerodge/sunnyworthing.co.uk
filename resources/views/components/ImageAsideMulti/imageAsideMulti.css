@@ -20,6 +20,10 @@
 
 .image-aside-multi__bard p {
     @apply mt-6 mb-6;
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    letter-spacing: .04em;
+    font-family: hind, Brother, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 2;
 }
 
 .image-aside-multi__carousel {

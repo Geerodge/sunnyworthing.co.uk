@@ -1,26 +1,6 @@
 title: Button
 fields:
   -
-    handle: button_text
-    field:
-      input_type: text
-      antlers: false
-      display: 'Button Text'
-      type: text
-      icon: text
-      width: 50
-      listable: hidden
-      instructions_position: above
-  -
-    handle: button_url
-    field:
-      display: 'Button Url'
-      type: link
-      icon: link
-      width: 50
-      listable: hidden
-      instructions_position: above
-  -
     handle: button_color
     field:
       options:
@@ -56,3 +36,23 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
+  -
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: button_url
+    field:
+      display: 'Button Url'
+      type: link
+      icon: link
+      listable: hidden
+      instructions_position: above
+      instructions: 'Use URL option for rel="nofollow" and target="_blank"'
+      read_only: false

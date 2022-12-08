@@ -3,7 +3,7 @@ id: 536a0713-3bd2-4656-9880-774127c8ce82
 blueprint: pages
 title: 'Sussex History'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1670435751
+updated_at: 1670519788
 block_builder:
   -
     image: history/south-downs-poppies.jpg
@@ -75,7 +75,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::a8e86c6a-1d24-4f57-a34b-19cc85fc08b5'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/high-salvington-post-mill'
       -
         center_align: 'no'
         image: history/bonfire-boys.jpg
@@ -85,7 +85,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::139e0edc-18cb-471d-bf8e-eab907505682'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/the-bonfire-boys'
       -
         center_align: 'no'
         image: history/goring-smugglers.jpg
@@ -95,7 +95,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::2e9b5672-7dff-40fd-8f3c-b84d91c3835a'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/the-goring-smugglers'
       -
         center_align: 'no'
         image: history/millers-tomb.jpg
@@ -105,7 +105,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::9bb5ec38-10a2-4d39-bba4-fe9c7d4318b8'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/mad-miller-and-the-millers-tomb'
       -
         center_align: 'no'
         image: history/skeleton-and-salvation-armies.jpg
@@ -115,7 +115,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::c8146a47-bb74-4279-a8da-d01196875420'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/the-skeleton-and-salvation-army'
       -
         center_align: 'no'
         image: history/dome-cinema-outside.jpg
@@ -125,7 +125,7 @@ block_builder:
         button_color: button--primary
         type: new_set
         enabled: true
-        button_url: 'entry::40e6119c-7904-4f58-8550-09a871bd639d'
+        button_url: 'https://sunnyworthing.co.uk/sussex-history/the-dome-cinema'
     type: cards
     enabled: true
 ---
