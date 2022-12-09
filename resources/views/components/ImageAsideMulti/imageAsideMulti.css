@@ -171,7 +171,7 @@
     }
 
     .image-aside-multi__images-wrapper {
-        @apply block p-10;
+        @apply block px-10;
         max-width: 50%;
     }
     

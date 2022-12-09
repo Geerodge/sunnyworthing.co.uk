@@ -3,16 +3,19 @@
         <div class={{ background === "bg-brand-primary" ? "text-white" : "text-brand-primary" }}>
             {{ bard }}
         </div>
-        <div class="bardmap__images-container">
-            {{ image }}
-                <img
-                class="bardmap__image {{ if first }} initial{{ /if }} {{ if last }} last{{ /if }} {{ background === "bg-brand-primary" ? "border-brand-primary" : "border-white" }}"
-                src="{{ glide:url width="auto" height="auto" }}"
-                loading="lazy"
-                alt="{{ alt }}" 
-                />
-            {{ /image }}
-        </div>
+        {{ if image }}
+            <div class="bardmap__images-container">
+                {{ /image }}
+                    <img
+                    class="bardmap__image {{ if first }} initial{{ /if }} {{ if last }} last{{ /if }} {{ background === "bg-brand-primary" ? "border-brand-primary" : "border-white" }}"
+                    src="{{ glide:url width="auto" height="auto" }}"
+                    loading="lazy"
+                    alt="{{ alt }}" 
+                    />
+                {{ /image }}
+            </div>
+        {{ else }}
+        {{ /if }}
         {{ buttons }}
             <div class="bardmap__button {{ button_center:value === 'yes' ? 'xxl:text-center' : '' }}">
                 <a class="button {{ button_color:value }}" href="{{ button_url }}"{{ if button_url | contains:sunnyworthing.co.uk }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>

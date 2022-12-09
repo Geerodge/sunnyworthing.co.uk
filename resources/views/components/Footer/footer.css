@@ -38,20 +38,20 @@ footer {
     @apply text-brand-blueLight;
 }
 
+.footer__top-container {
+    @apply flex flex-col flex-wrap mx-auto;
+}
+
 .footer__left {
-    @apply w-50 flex content-center justify-end ml-10;
+    @apply w-full;
 
     & h3 {
-        @apply m-auto;
+        @apply mt-2 mb-3;
     }
 }
 
 .footer__right {
-    @apply w-50 flex justify-start ml-10;
-
-    /* & .button {
-        background-color: rgb(247, 179, 0);
-    } */
+    @apply w-full;
 }
 
 @screen lg {
@@ -81,5 +81,12 @@ footer {
 
     .footer__text p {
         @apply text-left;
+    }
+
+    .footer__left {
+    
+        & h3 {
+            @apply mb-5;
+        }
     }
 }
