@@ -3,7 +3,7 @@ id: a6ddc575-8a46-4083-82c9-a5a2b06a3223
 blueprint: pages
 title: 'Best Places to Eat'
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1670245024
+updated_at: 1670771266
 block_builder:
   -
     background: bg-brand-primary
@@ -116,7 +116,7 @@ block_builder:
         textarea: "Discover the taste of Cyprus. The Fat Greek Taverna is the result of decades of traditional family Cypriot cooking integrated with European charm. You can expect all your meals to be prepared using wood fired ovens and real charcoal rotisseries.\_"
       -
         center_align: 'no'
-        title: 'Fernando''s Grill & Steak House'
+        title: "Fernando's Grill & Steak House"
         button_text: 'Visit Website'
         button_url: 'https://www.thewoodsburgerkitchen.com/'
         button_color: button--primary
