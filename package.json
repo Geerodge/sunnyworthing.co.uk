@@ -25,7 +25,8 @@
     "@tailwindcss/typography": "^0.5.2",
     "luminous-lightbox": "^2.4.0",
     "tailwind-css-variables": "^3.0.1",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "axios": "^0.26.0"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.4.1",
