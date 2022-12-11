@@ -1,3 +1,27 @@
+<script type="application/javascript">
+
+    {{# Handle contact submit #}}
+    const handleSubmit = e => {
+        const encode = (data) => {
+            return Object.keys(data)
+                .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+                .join("&");
+        }
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+        e.preventDefault();
+    };
+
+    {{# Success message #}}
+    if ( window.location.search.includes("success=true") ) {
+        alert("Thank you for your message! 🥳 We'll be in touch in soon");
+    };
+</script>
 {{ if template === "default" }}
     {{ asset:image }}
         <section class="hero" style="background-image: url( '{{ url }}' );
@@ -30,27 +54,20 @@
                     </p>
                 {{ /if }}
             </div>
-            {{ if hero_form_field }}
-                <div class="hero__form">
-                    {{ form:hero_subscription }}
-                        {{ if success }}
-                            <p>
-                                {{ success }}
-                            </p>
-                        {{ else }}
-                            {{ fields }}
-                                {{ field }}
-                            {{ /fields }}
-                            <input type="text"
-                                class="hidden"
-                                name="{{ honeypot ?? 'honeypot' }}">
-                            <button class="btn small btn--primary"
-                                    type="submit"><span class="hidden-phone">Subscribe now</span></button>
-                        {{ /if }}
-                    </div>
-                {{ /form:hero_subscription }}
+            <div class="hero__form">
+                <form 
+                    method="POST"
+                    action="/contact/?success=true"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    id="subscribe"
+                    name="subscribe"
+                    onsubmit="{handleSubmit}">
+                    <input type="email" name="email_address" value="" placeholder="Enter email address" required="">
+                    <button class="btn small btn--primary" type="submit"><span class="hidden-phone">Subscribe now</span></button>
+                </form>
+            </div>
             </div>
         </div>
-{{ /if }}
     </div>
 </section>
