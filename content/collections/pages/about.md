@@ -3,7 +3,7 @@ id: cb57477d-5748-4c4c-a535-33fd4699c002
 blueprint: pages
 title: About
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1669131831
+updated_at: 1670781584
 block_builder:
   -
     image: worthing-pier-sunset.jpg
@@ -221,7 +221,7 @@ block_builder:
       -
         image: about/cissbury-ring.png
         title: 'Cissbury Ring'
-        textarea: 'Cissbury Ring is a hill fort on the South Downs. It''s the largest hill fort in Sussex and has a history dating back over 5,000 years.'
+        textarea: "Cissbury Ring is a hill fort on the South Downs. It's the largest hill fort in Sussex and has a history dating back over 5,000 years."
         button_text: 'Read more'
         button_url: 'https://www.nationaltrust.org.uk/cissbury-ring/features/the-story-of-cissbury-ring'
         button_color: button--primary
@@ -241,7 +241,7 @@ block_builder:
       -
         image: about/beach-house-park.png
         title: 'Beach House Park'
-        textarea: 'Worthing''s most prestigious town centre park. Best known for its bowling greens and free outdoor Chess and Draughts.'
+        textarea: "Worthing's most prestigious town centre park. Best known for its bowling greens and free outdoor Chess and Draughts."
         button_text: 'Read more'
         button_url: 'https://www.tripadvisor.co.uk/Attraction_Review-g190761-d12702359-Reviews-Beach_House_Park-Worthing_West_Sussex_England.html'
         button_color: button--primary

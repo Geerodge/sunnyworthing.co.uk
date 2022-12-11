@@ -534,39 +534,35 @@ function hmrAcceptRun(bundle, id) {
 var _js = require("./**/*.js");
 var _js1 = require("../views/**/*.js");
 
-},{"./**/*.js":"1CHAM","../views/**/*.js":"bcQt3"}],"1CHAM":[function(require,module,exports) {
+},{"./**/*.js":"1CHAM","../views/**/*.js":"4CiFt"}],"1CHAM":[function(require,module,exports) {
 const _temp0 = require("../site.js");
 module.exports = {
     "site": _temp0
 };
 
-},{"../site.js":"7YkBc"}],"bcQt3":[function(require,module,exports) {
+},{"../site.js":"7YkBc"}],"4CiFt":[function(require,module,exports) {
 const _temp0 = require("../components/Accordion/accordion.js");
-const _temp1 = require("../components/Carbon/carbon.js");
-const _temp2 = require("../components/Hero/hero.js");
+const _temp1 = require("../components/Hero/hero.js");
+const _temp2 = require("../components/ImageAsideMulti/imageAsideMulti.js");
 const _temp3 = require("../components/Nav/navigation.js");
-const _temp4 = require("../components/ImageAsideMulti/imageAsideMulti.js");
 module.exports = {
     "components": {
         "Accordion": {
             "accordion": _temp0
         },
-        "Carbon": {
-            "carbon": _temp1
-        },
         "Hero": {
-            "hero": _temp2
+            "hero": _temp1
+        },
+        "ImageAsideMulti": {
+            "imageAsideMulti": _temp2
         },
         "Nav": {
             "navigation": _temp3
-        },
-        "ImageAsideMulti": {
-            "imageAsideMulti": _temp4
         }
     }
 };
 
-},{"../components/Accordion/accordion.js":"jwM1G","../components/Carbon/carbon.js":"1kUBH","../components/Hero/hero.js":"ejpVI","../components/Nav/navigation.js":"aaK6T","../components/ImageAsideMulti/imageAsideMulti.js":"70hbx"}],"jwM1G":[function(require,module,exports) {
+},{"../components/Accordion/accordion.js":"jwM1G","../components/Hero/hero.js":"ejpVI","../components/ImageAsideMulti/imageAsideMulti.js":"70hbx","../components/Nav/navigation.js":"aaK6T"}],"jwM1G":[function(require,module,exports) {
 const accordionItems = document.querySelectorAll(".accordion__item");
 if (accordionItems.length) {
     accordionItems.forEach((item)=>{
@@ -590,97 +586,9 @@ if (accordionItems.length) {
     };
 }
 
-},{}],"1kUBH":[function(require,module,exports) {
-/*
-Carbon report, powered by Beacon
-https://digitalbeacon.co/
-*/ window.onload = function() {
-    if ("fetch" in window) {
-        // If the fetch API is not available, don't do anything.
-        // Calc loading time
-        setTimeout(()=>{
-            const perfData = window.performance.timing;
-            const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-            document.querySelector(".js-timing").textContent = (pageLoadTime / 1000).toFixed(1) + "s";
-        }, 1);
-        // Set up CO2 call
-        const output = document.querySelector(".js-grams");
-        const dbUrl = encodeURIComponent(window.location.href);
-        let cachedResponse = localStorage.getItem("dbb_" + dbUrl);
-        let check = true;
-        if (cachedResponse) {
-            const data = JSON.parse(cachedResponse);
-            if (Math.ceil(Math.abs(new Date().getTime() - data.t) / 86400000) >= 7) check = true;
-            else {
-                output.textContent = data.co2;
-                check = false;
-            }
-        }
-        if (check) fetch("https://digitalbeacon.co/badge?url=" + dbUrl).then(function(data) {
-            if (!data.ok) throw Error(data);
-            return data.json();
-        }).then(function(data) {
-            document.querySelector(".js-grams").textContent = data.co2;
-            // Save the result into localStorage with a timestamp
-            data.t = new Date().getTime();
-            localStorage.setItem("dbb_" + dbUrl, JSON.stringify(data));
-        })// Handle error responses
-        .catch(function(e) {
-            localStorage.removeItem("dbb_" + dbUrl);
-            output.textContent = "error";
-        });
-    } else document.querySelector(".js-carbon").style.display = "none";
-};
-
 },{}],"ejpVI":[function(require,module,exports) {
 if (window.innerWidth < 641) document.getElementsByName("email_address")[0].placeholder = "Subscribe to newsletter";
 else document.getElementsByName("email_address")[0].placeholder = "Enter email address";
-
-},{}],"aaK6T":[function(require,module,exports) {
-const mobileNavigation = document.querySelector(".js-mobile-navigation");
-const hamburgerMenu = document.querySelectorAll(".js-hamburger-menu");
-const navbarLinks = document.querySelectorAll(".js-anchor");
-let mobileMenuOpen = false;
-hamburgerMenu.forEach((menu)=>{
-    menu.addEventListener("click", ()=>{
-        mobileMenuOpen = !mobileMenuOpen;
-        if (mobileMenuOpen) {
-            mobileNavigation.classList.remove("nav__mobile-closed");
-            mobileNavigation.classList.add("nav__mobile-open");
-        } else {
-            mobileNavigation.classList.add("nav__mobile-closed");
-            mobileNavigation.classList.remove("nav__mobile-open");
-        }
-    });
-});
-navbarLinks.forEach((elem)=>elem.addEventListener("click", navbarLinkClick));
-function navbarLinkClick(event) {
-    if (window.location.pathname === "/") smoothScroll(event);
-    else document.location.href = "/";
-}
-function smoothScroll(event) {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    const targetPosition = document.querySelector(targetId).offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 1000;
-    let start = null;
-    window.requestAnimationFrame(step);
-    function step(timestamp) {
-        if (!start) start = timestamp;
-        const progress = timestamp - start;
-        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-        if (progress < duration) window.requestAnimationFrame(step);
-    }
-}
-// Easing Functions
-function easeInOutCubic(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t * t + b;
-    t -= 2;
-    return c / 2 * (t * t * t + 2) + b;
-}
 
 },{}],"70hbx":[function(require,module,exports) {
 !function(d) {
@@ -774,6 +682,52 @@ function easeInOutCubic(t, b, c, d) {
     // make it rain
     initCarousel();
 }(document);
+
+},{}],"aaK6T":[function(require,module,exports) {
+const mobileNavigation = document.querySelector(".js-mobile-navigation");
+const hamburgerMenu = document.querySelectorAll(".js-hamburger-menu");
+const navbarLinks = document.querySelectorAll(".js-anchor");
+let mobileMenuOpen = false;
+hamburgerMenu.forEach((menu)=>{
+    menu.addEventListener("click", ()=>{
+        mobileMenuOpen = !mobileMenuOpen;
+        if (mobileMenuOpen) {
+            mobileNavigation.classList.remove("nav__mobile-closed");
+            mobileNavigation.classList.add("nav__mobile-open");
+        } else {
+            mobileNavigation.classList.add("nav__mobile-closed");
+            mobileNavigation.classList.remove("nav__mobile-open");
+        }
+    });
+});
+navbarLinks.forEach((elem)=>elem.addEventListener("click", navbarLinkClick));
+function navbarLinkClick(event) {
+    if (window.location.pathname === "/") smoothScroll(event);
+    else document.location.href = "/";
+}
+function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href");
+    const targetPosition = document.querySelector(targetId).offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000;
+    let start = null;
+    window.requestAnimationFrame(step);
+    function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+    }
+}
+// Easing Functions
+function easeInOutCubic(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t * t + b;
+    t -= 2;
+    return c / 2 * (t * t * t + 2) + b;
+}
 
 },{}]},["4u3L3","7YkBc"], "7YkBc", "parcelRequire2e80")
 
