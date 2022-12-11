@@ -120,6 +120,10 @@
         right: -10px;
     }
 
+    .hero__form p {
+        @apply text-gray-500 font-sans text-center p-5;
+    }
+
     .hidden-phone {
         @apply inline;
     }
