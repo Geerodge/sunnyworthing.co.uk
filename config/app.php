@@ -166,8 +166,8 @@ return [
          * with a custom one from the Blade package that automatically
          * augments all instances of \Statamic\Fields\Value.
          */
-        //Illuminate\View\ViewServiceProvider::class,
-        \Edalzell\Blade\Augmentation\AugmentationViewServiceProvider::class,
+        Illuminate\View\ViewServiceProvider::class,
+        // \Edalzell\Blade\Augmentation\AugmentationViewServiceProvider::class,
 
         /*
          * Package Service Providers...

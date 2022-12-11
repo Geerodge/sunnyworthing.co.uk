@@ -2479,8 +2479,6 @@ footer {
   }
 }
 
-
-
 .hidden-phone {
   display: none;
 }
@@ -2684,6 +2682,8 @@ footer {
     max-width: 45%;
   }
 }
+
+
 
 .image-aside {
   max-width: 1920px;
@@ -2949,6 +2949,14 @@ footer {
   }
 }
 
+.instagram {
+  max-width: 1920px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav__container {
   z-index: 40;
   height: 8rem;
@@ -3059,12 +3067,15 @@ footer {
   }
 }
 
-.instagram {
-  max-width: 1920px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  margin-left: auto;
-  margin-right: auto;
+.social-links path {
+  fill: var(--color-brand-socials);
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.social-links li:hover path {
+  fill: var(--color-brand-socialp);
 }
 
 .youtube {
@@ -3097,17 +3108,6 @@ footer {
 
 .youtube_container__aspect {
   --tw-aspect-h: 9;
-}
-
-.social-links path {
-  fill: var(--color-brand-socials);
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: .15s;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-}
-
-.social-links li:hover path {
-  fill: var(--color-brand-socialp);
 }
 
 
