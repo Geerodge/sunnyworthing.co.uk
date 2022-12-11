@@ -10,7 +10,7 @@
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "Hero Subscription", ...this.state })
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -19,7 +19,7 @@
 
     {{# Success message #}}
     if ( window.location.search.includes("success=true") ) {
-        alert("Thank you for your message! 🥳 We'll be in touch in soon");
+        alert("Subscription successful 🥳");
     };
 </script>
 {{ if template === "default" }}
@@ -57,7 +57,7 @@
             <div class="hero__form">
                 <form 
                     method="POST"
-                    action="/contact/?success=true"
+                    action="/?success=true"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
                     id="subscribe"
