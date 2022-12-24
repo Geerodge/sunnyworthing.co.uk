@@ -8,12 +8,12 @@
 }
 
 .hero__container {
-    @apply flex items-center justify-center relative h-full;
+    @apply flex items-center justify-center relative h-full overflow-hidden;
 }
 
 .hero__inner {
     @apply absolute flex flex-col items-center justify-center h-full w-full px-4;
-    transform: translate(0, -8rem);
+    transform: translate(-15%);
     max-width: 88rem;
 }
 
@@ -71,6 +71,7 @@
     .hero__heading {
         font-size: 2.5rem;
     }
+
 }
 
 @screen sm {
@@ -143,6 +144,10 @@
 
     .hero__heading {
         font-size: 3.5rem;
+    }
+
+    .hero__inner {
+        transform: translate(0, -8rem);
     }
 }
 
