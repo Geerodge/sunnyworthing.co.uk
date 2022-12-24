@@ -1,25 +1,24 @@
 <script type="application/javascript">
-
     {{# Handle contact submit #}}
-    const submitForm = async (values) => {
-        
-        const { email } = values;
-        try {
-            const payload = {
-                email: email
-            };
+        const handleSubmit = async (values) => {
 
-        await axios.post("/.netlify/functions/add-email-subscriber", payload);
-            alert("Contact details were added successfully");
-        } catch (error) {
-            alert(error.message);
+            const { email } = values;
+            try {
+                const payload = {
+                    email: email
+                };
+
+            await axios.post("/.netlify/functions/add-email-subscriber", payload);
+                alert("Contact details were added successfully");
+            } catch (error) {
+                alert(error.message);
+            }
         }
-    }
 
-    {{# Success message #}}
-    if ( window.location.search.includes("success=true") ) {
-        alert("Subscription successful 🥳");
-    };
+        {{# Success message #}}
+        if ( window.location.search.includes("success=true") ) {
+            alert("Subscription successful 🥳");
+        };
 </script>
 {{ if template === "default" }}
     {{ asset:image }}
