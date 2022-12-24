@@ -1,5 +1,6 @@
 <script type="application/javascript">
     {{# Handle contact submit #}}
+    document.addEventListener('submit', (e) => {
         const handleSubmit = async (values) => {
 
             const { email } = values;
@@ -19,6 +20,9 @@
         if ( window.location.search.includes("success=true") ) {
             alert("Subscription successful 🥳");
         };
+
+        e.preventDefault();
+    }
 </script>
 {{ if template === "default" }}
     {{ asset:image }}
