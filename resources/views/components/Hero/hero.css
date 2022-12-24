@@ -147,7 +147,7 @@
     }
 
     .hero__inner {
-        transform: translate(0, -8rem);
+        transform: translate(0, 0);
     }
 }
 
@@ -156,6 +156,10 @@
     .hero__text-container,
     .hero__form {
         @apply w-50;
+    }
+
+    .hero__inner {
+        transform: translate(0, -8rem);
     }
 }
 
