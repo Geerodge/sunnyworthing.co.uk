@@ -4,8 +4,8 @@ const navbarLinks = document.querySelectorAll(".js-anchor");
 
 let mobileMenuOpen = false;
 
-hamburgerMenu.forEach((menu) => {
-    menu.addEventListener("click", () => {
+hamburgerMenu.forEach((nav) => {
+    nav.addEventListener("click", () => {
         mobileMenuOpen = !mobileMenuOpen;
         if (mobileMenuOpen) {
             mobileNavigation.classList.remove("nav__mobile-closed");
