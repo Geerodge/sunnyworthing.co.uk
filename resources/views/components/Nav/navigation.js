@@ -8,11 +8,11 @@ hamburgerMenu.forEach((menu) => {
     menu.addEventListener("click", () => {
         mobileMenuOpen = !mobileMenuOpen;
         if (mobileMenuOpen) {
-            mobileNavigation.classList.remove("nav__mobile-closed");
-            mobileNavigation.classList.add("nav__mobile-open");
+            mobileNavigation.classList.remove("mobile-navigation-closed");
+            mobileNavigation.classList.add("mobile-navigation-open");
         } else {
-            mobileNavigation.classList.add("nav__mobile-closed");
-            mobileNavigation.classList.remove("nav__mobile-open");
+            mobileNavigation.classList.add("mobile-navigation-closed");
+            mobileNavigation.classList.remove("mobile-navigation-open");
         }
     });
 });
