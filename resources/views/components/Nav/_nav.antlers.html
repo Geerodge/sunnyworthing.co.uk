@@ -1,5 +1,5 @@
 <div class="nav relative bg-white">
-    <div class="nav__container max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+    <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div class="flex justify-between items-center h-full">
             <div class="flex justify-center">
                 <a href="/">
@@ -9,7 +9,7 @@
             <nav class="nav hidden lg:flex lg:items-center">
                 {{ nav:main_nav }}
                     <a href="{{ url }}"
-                        class="nav__link text-xl {{ is_current || is_parent ?= "nav__link--active" }}">
+                        class="nav-link text-xl {{ is_current || is_parent ?= "nav-link--active" }}">
                         {{ title }}
                     </a>
                     {{ if children }}
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="nav__mobile nav__mobile-closed js-mobile-navigation">
+    <div class="mobile-navigation mobile-navigation-closed js-mobile-navigation">
         <div class="rounded-lg shadow-lg bg-brand-white">
             <div class="pt-4 pb-10 px-4">
                 <div class="flex items-center justify-between">
@@ -57,7 +57,7 @@
                     <nav class="grid gap-y-8">
                         {{ nav:main_nav }}
                             <a href="{{ url }}"
-                                class="nav__link text-base {{ is_current || is_parent ?= "nav__link nav__link--active" }}">
+                                class="nav-link text-base {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
                                 {{ title }}
                             </a>
                         {{ /nav:main_nav }}
