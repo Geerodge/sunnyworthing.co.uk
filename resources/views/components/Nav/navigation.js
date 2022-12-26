@@ -1,4 +1,4 @@
-const mobileNavigation = document.querySelector(".js-mobile-navigation");
+const mobileNavigation = document.querySelectorAll(".js-mobile-navigation");
 const hamburgerMenu = document.querySelectorAll(".js-hamburger-menu");
 const navbarLinks = document.querySelectorAll(".js-anchor");
 
