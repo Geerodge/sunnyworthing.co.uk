@@ -1,105 +1,69 @@
-<header class="nav-wrapper relative">
-    <div class="nav-container">
-            <div class="nav-content">
-                {{ company_information:logo }}
+<div class="nav relative bg-white">
+    <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+        <div class="flex justify-between items-center h-full">
+            <div class="flex justify-center">
                 <a href="/">
-                    <img
-                        class="h-12 sm:h-16 w-auto"
-                        src="{{ url }}"
-                        loading="lazy"
-                        alt="{{ title }}"
-                    />
+                    <img class="h-80 w-auto pr-4" src="/assets/logo.svg" loading="lazy" alt="logo" />
                 </a>
-                {{ /company_information:logo }}
             </div>
-            <nav class="nav-list hidden">
+            <nav class="nav hidden lg:flex lg:items-center">
                 {{ nav:main_nav }}
-                <a href="{{ url }}" class="nav-link anchor {{ is_current || is_parent ?= "nav-link nav-link--active" }}"> {{ title }} </a>
+                    <a href="{{ url }}"
+                        class="nav-link text-xl {{ is_current || is_parent ?= "nav-link--active" }}">
+                        {{ title }}
+                    </a>
+                    {{ if children }}
+                        <nav class="nav__dropdown">
+                            {{ *recursive children* }}
+                        </nav>
+                    {{ endif }}
                 {{ /nav:main_nav }}
-                <a
-                    href="mailto:{{ company_information:email }}"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="nav-link anchor anchor--secondary lowercase"
-                >
-                    {{ company_information:email }}
-                </a>
             </nav>
-            <div class="mr-2 -my-2 xl:hidden">
-                <button
-                    type="button"
-                    class="js-hamburger-menu rounded-md p-2 inline-flex items-center justify-center text-brand-primary transition-all hover:text-brand-secondary"
-                >
+            <div class="-mr-2 -my-2 lg:hidden">
+                <button type="button"
+                    class="js-hamburger-menu rounded-md p-2 inline-flex items-center justify-center text-brand-primary transition-color hover:text-brand-primary">
                     <!-- Heroicon name: outline/menu -->
-                    <svg
-                        class="h-10"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"
-                        />
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
+        </div>
     </div>
-    <div class="mobile-nav mobile-nav-closed js-mobile-nav">
-            <div class="mobile-nav-container">
+    <div class="mobile-nav mobile-navigation-closed js-mobile-navigation">
+        <div class="rounded-lg shadow-lg bg-brand-white">
+            <div class="pt-4 pb-10 px-4">
                 <div class="flex items-center justify-between">
-                        <a href="/">
-                            {{ company_information:logo }}
-                            <img
-                                class="h-10 sm:h-14 w-auto"
-                                src="{{ url }}"
-                                loading="lazy"
-                                alt="{{ title }}"
-                            />
-                            {{ /company_information:logo }}
-                        </a>
                     <div>
-                        <button
-                            type="button"
-                            class="js-hamburger-menu rounded-md p-2 inline-flex items-center justify-center text-brand-primary transition-all hover:text-brand-secondary"
-                        >
-                            <svg
-                                class="h-10"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
+                        <a href="/">
+                            <img loading="lazy" class="h-20 w-auto -ml-2 sm:ml-0 pr-2" src="/assets/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="-mr-4">
+                        <button type="button"
+                            class="js-hamburger-menu rounded-md p-2 inline-flex items-center justify-center text-brand-primary transition-color hover:text-brand-primary">
+                            <!-- Heroicon name: outline/x -->
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
                 </div>
-                    <nav class="mobile-nav-links">
+                <div class="mt-6">
+                    <nav class="grid gap-y-8">
                         {{ nav:main_nav }}
-                        <a href="{{ url }}" class="nav-link anchor {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
-                            {{ title }}
-                        </a>
+                            <a href="{{ url }}"
+                                class="nav-link text-base {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
+                                {{ title }}
+                            </a>
                         {{ /nav:main_nav }}
-                        <a
-                            href="mailto:{{ company_information:email }}"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="nav-link anchor anchor--secondary lowercase"
-                        >
-                            {{ company_information:email }}
-                        </a>
                     </nav>
+                </div>
             </div>
+        </div>
     </div>
-</header>
+</div>
