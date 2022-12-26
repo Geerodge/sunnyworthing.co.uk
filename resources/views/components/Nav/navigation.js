@@ -1,11 +1,11 @@
-const mobileNavigation = document.querySelectorAll(".js-mobile-navigation");
+const mobileNavigation = document.querySelector(".js-mobile-navigation");
 const hamburgerMenu = document.querySelectorAll(".js-hamburger-menu");
 const navbarLinks = document.querySelectorAll(".js-anchor");
 
 let mobileMenuOpen = false;
 
-hamburgerMenu.forEach((elem) => {
-    elem.addEventListener("click", () => {
+hamburgerMenu.forEach((menu) => {
+    menu.addEventListener("click", () => {
         mobileMenuOpen = !mobileMenuOpen;
         if (mobileMenuOpen) {
             mobileNavigation.classList.remove("mobile-navigation-closed");
