@@ -2730,7 +2730,7 @@ footer {
   }
 
   .hero__form button:after {
-    content: "→";
+    content: "🡢";
     vertical-align: 0%;
     margin: 0 .5rem;
     font-size: 1rem;

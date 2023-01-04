@@ -103,7 +103,7 @@
 
     .hero__form button:after {
         @apply text-base;
-        content: "\2192";
+        content: "\01F862";
         margin: 0 .5rem;
         position: relative;
         right: 0;
