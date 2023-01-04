@@ -836,6 +836,10 @@ img, video {
   margin: auto;
 }
 
+.m-2 {
+  margin: .5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -894,8 +898,16 @@ img, video {
   margin-bottom: .75rem;
 }
 
-.mr-2 {
-  margin-right: .5rem;
+.-mr-2 {
+  margin-right: -.5rem;
+}
+
+.-ml-2 {
+  margin-left: -.5rem;
+}
+
+.-mr-4 {
+  margin-right: -1rem;
 }
 
 .mb-6 {
@@ -908,18 +920,6 @@ img, video {
 
 .-ml-px {
   margin-left: -1px;
-}
-
-.-mr-2 {
-  margin-right: -.5rem;
-}
-
-.-ml-2 {
-  margin-left: -.5rem;
-}
-
-.-mr-4 {
-  margin-right: -1rem;
 }
 
 .inline {
@@ -958,16 +958,16 @@ img, video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-10 {
-  height: 10%;
+.h-auto {
+  height: auto;
 }
 
 .h-8 {
   height: 2rem;
+}
+
+.h-20 {
+  height: 20%;
 }
 
 .h-5 {
@@ -976,10 +976,6 @@ img, video {
 
 .h-80 {
   height: 80%;
-}
-
-.h-20 {
-  height: 20%;
 }
 
 .w-4 {
@@ -994,16 +990,16 @@ img, video {
   width: auto;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-56 {
   width: 14rem;
 }
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-screen-max {
@@ -1208,20 +1204,24 @@ img, video {
   padding-bottom: 2rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pb-10 {
+  padding-bottom: 10%;
 }
 
 .pr-2 {
   padding-right: .5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -1241,14 +1241,14 @@ img, video {
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: .875rem;
-  line-height: 1.25rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .font-medium {
@@ -1257,10 +1257,6 @@ img, video {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }
 
 .leading-normal {
@@ -1300,27 +1296,21 @@ img, video {
   opacity: .75;
 }
 
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 #0000000d;
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 #0000000d;
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ring-gray-300 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
-}
-
-.transition-all {
-  transition-property: all;
-  transition-duration: .15s;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
 .transition {
@@ -1337,9 +1327,13 @@ img, video {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
-.hover\:text-brand-secondary:hover {
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:text-brand-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(1 102 153 / var(--tw-text-opacity));
+  color: rgb(27 61 106 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-500:hover {
@@ -1350,11 +1344,6 @@ img, video {
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.hover\:text-brand-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(27 61 106 / var(--tw-text-opacity));
 }
 
 .focus\:z-10:focus {
@@ -1403,14 +1392,6 @@ img, video {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-16 {
-    height: 4rem;
-  }
-
-  .sm\:h-14 {
-    height: 3.5rem;
   }
 
   .sm\:flex-1 {
@@ -1481,12 +1462,6 @@ img, video {
 
   .lg\:pb-12 {
     padding-bottom: 3rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:hidden {
-    display: none;
   }
 }
 
@@ -2676,7 +2651,6 @@ footer {
 }
 
 .hero__form button:after {
-  content: "🡢";
   vertical-align: -30%;
   font-size: 1.125rem;
   line-height: 1.75rem;
