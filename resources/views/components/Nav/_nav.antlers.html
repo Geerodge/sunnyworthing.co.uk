@@ -1,4 +1,4 @@
-<div class="nav relative bg-white">
+<header class="nav relative bg-white">
     <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div class="flex justify-between items-center h-full">
             <div class="flex justify-center">
@@ -32,9 +32,9 @@
             </div>
         </div>
     </div>
-    <div class="mobile-nav mobile-navigation-closed js-mobile-navigation">
+    <div class="mobile-nav mobile-nav-closed js-mobile-nav">
         <div class="rounded-lg shadow-lg bg-brand-white">
-            <div class="pt-4 pb-10 px-4">
+            <div class="pt-4 pb-5 px-4">
                 <div class="flex items-center justify-between">
                     <div>
                         <a href="/">
@@ -60,10 +60,35 @@
                                 class="nav-link text-base {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
                                 {{ title }}
                             </a>
+                            {{ if children }}
+                                <nav class="mobile-nav-children">
+                                    {{ *recursive children* }}
+                                </nav>
+                            {{ endif }}
                         {{ /nav:main_nav }}
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</header>
+<script>
+    const mobileNav = document.querySelector(".js-mobile-nav");
+    const hamburgerMenu = document.querySelectorAll(".js-hamburger-menu");
+    // const navbarLinks = document.querySelectorAll(".js-anchor");
+
+    let mobileMenuOpen = false;
+
+    hamburgerMenu.forEach((menu) => {
+        menu.addEventListener("click", () => {
+            mobileMenuOpen = !mobileMenuOpen;
+            if (mobileMenuOpen) {
+                mobileNav.classList.remove("mobile-nav-closed");
+                mobileNav.classList.add("mobile-nav-open");
+            } else {
+                mobileNav.classList.add("mobile-nav-closed");
+                mobileNav.classList.remove("mobile-nav-open");
+            }
+        });
+    });
+</script>
