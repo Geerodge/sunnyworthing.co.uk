@@ -5,7 +5,7 @@
         </div>
         {{ if image }}
             <div class="bardmap__images-container">
-                {{ /image }}
+                {{ image }}
                     <img
                     class="bardmap__image {{ if first }} initial{{ /if }} {{ if last }} last{{ /if }} {{ background === "bg-brand-primary" ? "border-brand-primary" : "border-white" }}"
                     src="{{ glide:url width="auto" height="auto" }}"
