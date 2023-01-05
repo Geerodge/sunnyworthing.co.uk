@@ -1,8 +1,6 @@
 <section class="section bard {{ background }} max-w-screen-max mx-auto">
-    <div class="pt-6 pb-6 max-w-3xl mx-auto px-6 xxl:max-w-4xl xxl:pb-0 {{ center_xxl:value === 'yes' ? 'xxl:text-center xxl:list-none' : '' }} {{ center_all:value === 'yes' ? 'text-center' : '' }}">
-        <div class={{ background === "bg-brand-primary" ? "text-white" : "text-brand-primary" }}>
+    <div class="flex flex-col justify-center content-center max-w-3xl mx-auto px-6 xxl:max-w-4xl xxl:pb-0 {{ center_xxl:value === 'yes' ? 'xxl:text-center xxl:list-none' : '' }} {{ center_all:value === 'yes' ? 'text-center' : '' }} {{ background === "bg-brand-primary" ? "text-white" : "text-brand-primary" }}">
             {{ bard }}
-        </div>
         {{ buttons }}
             <div class="bard__button">
                 <a class="button {{ button_color:value }}" href="{{ button_url }}"{{ if button_url | contains:sunnyworthing.co.uk }} {{ else }} rel="nofollow" target="_blank" {{ /if }}>
@@ -10,15 +8,18 @@
                 </a>
             </div>
         {{ /buttons }}
-        <div class="bard__images-container">
-            {{ image }}
-                <img
-                class="bard__image {{ if first }} initial{{ /if }} {{ if last }} last{{ /if }} {{ background === "bg-brand-primary" ? "border-brand-primary" : "border-white" }}"
-                src="{{ glide:url width="auto" height="auto" }}"
-                loading="lazy"
-                alt="{{ alt }}" 
-                />
-            {{ /image }}
-        </div>
+        {{ if image }}
+            <div class="bardmap__images-container">
+                {{ image }}
+                    <img
+                    class="bardmap__image {{ if first }} initial{{ /if }} {{ if last }} last{{ /if }} {{ background === "bg-brand-primary" ? "border-brand-primary" : "border-white" }}"
+                    src="{{ glide:url width="auto" height="auto" }}"
+                    loading="lazy"
+                    alt="{{ alt }}" 
+                    />
+                {{ /image }}
+            </div>
+        {{ else }}
+        {{ /if }}
     </div>
 </section>
