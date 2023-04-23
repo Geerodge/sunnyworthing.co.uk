@@ -2,3 +2,33 @@
   from = "/newsletter"
   to = "https://manage.kmail-lists.com/subscriptions/subscribe?g=Ydq3ab"
   status = 301
+
+[[redirects]]
+  from = "/walks"
+  to = "https://sunnyworthing.co.uk"
+  status = 301
+
+[[redirects]]
+from = "/explore/food-and-drink/"
+to = "https://sunnyworthing.co.uk/food-and-drink/"
+status = 301
+
+[[redirects]]
+from = "/goring_smugglers.html"
+to = "https://sunnyworthing.co.uk/sussex-history/the-goring-smugglers/"
+status = 301
+
+[[redirects]]
+from = "/history"
+to = "https://sunnyworthing.co.uk/sussex-history/"
+status = 301
+
+[[redirects]]
+from = "/history/the-skeleton-army/"
+to = "https://sunnyworthing.co.uk/sussex-history/the-skeleton-and-salvation-army/"
+status = 301
+
+[[redirects]]
+from = "/community/"
+to = "https://sunnyworthing.co.uk/"
+status = 301
